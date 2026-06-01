@@ -3,7 +3,7 @@ from pathlib import Path
 import joblib
 from sentence_transformers import SentenceTransformer
 base = Path(__file__).resolve().parent.parent
-BUNDLE_PATH = base / "models" / "knnbase.joblib"
+BUNDLE_PATH = base / "models" / "logregression.joblib"
 @lru_cache(maxsize=1)
 def load_bundle():
     return joblib.load(BUNDLE_PATH)
