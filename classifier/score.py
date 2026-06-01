@@ -52,59 +52,40 @@ def make_empty_scores() -> dict[str, float]:
 def add_marker_score(
     scores: dict[str, float],
     marker: str,
-    source: str,
     multiplier: float,
-    weight: dict[str, dict[str, int]],
-    evidence: list[dict],) -> None:
+    weight: dict[str, dict[str, int]]) -> None:
 
     marker_weight = weight[marker]
-    added_scores: dict[str, float] = {}
 
     for category in CATEGORIES:
         added_score = marker_weight[category] * multiplier
         scores[category] += added_score
-        added_scores[category] = added_score
-
-    evidence.append(
-        {
-            "marker": marker,
-            "source": source,
-            "multiplier": multiplier,
-            "added_scores": added_scores,
-        }
-    )
 
 
 def calculate_scores(
     subject_markers: list[str],
     text_markers: list[str],
-    weight: dict[str, dict[str, int]]) -> \
-        tuple[dict[str, float], list[dict]]:
+    weight: dict[str, dict[str, int]]) -> dict[str, float]:
     
     scores = make_empty_scores()
-    evidence: list[dict] = []
 
     for marker in text_markers:
         add_marker_score(
             scores=scores,
             marker=marker,
-            source="text",
             multiplier=TEXT_MULTIPLIER,
             weight=weight,
-            evidence=evidence,
         )
 
     for marker in subject_markers:
         add_marker_score(
             scores=scores,
             marker=marker,
-            source="subject",
             multiplier=SUBJECT_MULTIPLIER,
             weight=weight,
-            evidence=evidence,
         )
 
-    return scores, evidence
+    return scores
 
 
 def choose_category(scores: dict[str, float]) -> tuple[str, str]:
@@ -147,7 +128,7 @@ def classify_email(
     subject_markers = find_markers(email.subject, markers)
     text_markers = find_markers(email.text, markers)
 
-    scores, evidence = calculate_scores(
+    scores = calculate_scores(
         subject_markers=subject_markers,
         text_markers=text_markers,
         weight=weight,
@@ -156,6 +137,7 @@ def classify_email(
     category, decision_reason = choose_category(scores)
 
     return {
+        "file_name": email.file_name,
         "subject": email.subject,
         "sender": email.sender,
         "recipient": email.recipient,
@@ -166,7 +148,6 @@ def classify_email(
         "scores": scores,
         "matched_subject_markers": subject_markers,
         "matched_text_markers": text_markers,
-        "evidence": evidence,
         "decision_reason": decision_reason,
     }
 

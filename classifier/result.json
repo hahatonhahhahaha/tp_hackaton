@@ -1,34 +1,39 @@
 [
     {
+        "file_name": "",
         "subject": "браузер Chrome зависает при открытии",
         "sender": "s.volkov@partner.ru",
         "recipient": "",
         "date": "",
         "text": "Здравствуйте!\n\nПосле обновления системы браузер Chrome не открывает файлы нужного формата. Раньше всё работало.\n\nСпасибо.",
         "links": [],
-        "category": "прочее",
+        "category": "incidents",
         "scores": {
-            "incidents": 0,
+            "incidents": 32,
             "service_requests": 0,
             "spam": 0,
             "hardware_faults": 0
         },
         "matched_subject_markers": [],
-        "matched_text_markers": [],
-        "evidence": [],
-        "decision_reason": "Лучший результат у категории 'incidents' = 0, но нужен минимум 10"
+        "matched_text_markers": [
+            "не открывает файлы нужного формата",
+            "после обновления системы"
+        ],
+        "decision_reason": "Выбрана категория 'incidents', score=32, отрыв от второго места=32",
+        "move_status": "пропущено: нет имени файла"
     },
     {
+        "file_name": "",
         "subject": "URGENT: Запрос от внешнего пользователя",
         "sender": "John Smith <john.smith@globaltech.com>",
         "recipient": "it-support@company.ru",
         "date": "03.04.2025 11:08",
         "text": "Добрый день.\n\nКлиент обращается повторно — заявка висит без ответа уже 3 дня. Прошу срочно разобраться.\n\nP.S. Это уже второй запрос по данной теме.",
         "links": [],
-        "category": "service_requests",
+        "category": "incidents",
         "scores": {
-            "incidents": 0.0,
-            "service_requests": 29.0,
+            "incidents": 16.0,
+            "service_requests": 3.5,
             "spam": 0.0,
             "hardware_faults": 0.0
         },
@@ -36,47 +41,14 @@
             "запрос"
         ],
         "matched_text_markers": [
-            "запрос",
-            "заявка"
+            "заявка висит без ответа",
+            "запрос"
         ],
-        "evidence": [
-            {
-                "marker": "запрос",
-                "source": "text",
-                "multiplier": 1,
-                "added_scores": {
-                    "incidents": 0,
-                    "service_requests": 6,
-                    "spam": 0,
-                    "hardware_faults": 0
-                }
-            },
-            {
-                "marker": "заявка",
-                "source": "text",
-                "multiplier": 1,
-                "added_scores": {
-                    "incidents": 0,
-                    "service_requests": 8,
-                    "spam": 0,
-                    "hardware_faults": 0
-                }
-            },
-            {
-                "marker": "запрос",
-                "source": "subject",
-                "multiplier": 2.5,
-                "added_scores": {
-                    "incidents": 0.0,
-                    "service_requests": 15.0,
-                    "spam": 0.0,
-                    "hardware_faults": 0.0
-                }
-            }
-        ],
-        "decision_reason": "Выбрана категория 'service_requests', score=29.0, отрыв от второго места=29.0"
+        "decision_reason": "Выбрана категория 'incidents', score=16.0, отрыв от второго места=12.5",
+        "move_status": "пропущено: нет имени файла"
     },
     {
+        "file_name": "",
         "subject": "[IT] Корпоративный дайджест — выпуск #11",
         "sender": "Виктор Громов <v.gromov@partner.ru>",
         "recipient": "it-support@company.ru",
@@ -85,31 +57,23 @@
         "links": [],
         "category": "прочее",
         "scores": {
-            "incidents": 8,
-            "service_requests": 2,
-            "spam": 0,
-            "hardware_faults": 0
+            "incidents": -13.0,
+            "service_requests": -19.0,
+            "spam": -21.0,
+            "hardware_faults": -21.0
         },
-        "matched_subject_markers": [],
+        "matched_subject_markers": [
+            "корпоративный дайджест"
+        ],
         "matched_text_markers": [
+            "плановые технические работы",
             "недоступен"
         ],
-        "evidence": [
-            {
-                "marker": "недоступен",
-                "source": "text",
-                "multiplier": 1,
-                "added_scores": {
-                    "incidents": 8,
-                    "service_requests": 2,
-                    "spam": 0,
-                    "hardware_faults": 0
-                }
-            }
-        ],
-        "decision_reason": "Лучший результат у категории 'incidents' = 8, но нужен минимум 10"
+        "decision_reason": "Лучший результат у категории 'incidents' = -13.0, но нужен минимум 10",
+        "move_status": "пропущено: нет имени файла"
     },
     {
+        "file_name": "",
         "subject": "Падает система согласования, работа остановлена",
         "sender": "Виктор Громов <v.gromov@partner.ru>",
         "recipient": "it-support@company.ru",
@@ -118,7 +82,7 @@
         "links": [],
         "category": "incidents",
         "scores": {
-            "incidents": 55.0,
+            "incidents": 71.0,
             "service_requests": 0.0,
             "spam": 0.0,
             "hardware_faults": 0.0
@@ -127,93 +91,50 @@
             "работа остановлена"
         ],
         "matched_text_markers": [
+            "затронуты примерно",
             "инцидент"
         ],
-        "evidence": [
-            {
-                "marker": "инцидент",
-                "source": "text",
-                "multiplier": 1,
-                "added_scores": {
-                    "incidents": 10,
-                    "service_requests": 0,
-                    "spam": 0,
-                    "hardware_faults": 0
-                }
-            },
-            {
-                "marker": "работа остановлена",
-                "source": "subject",
-                "multiplier": 2.5,
-                "added_scores": {
-                    "incidents": 45.0,
-                    "service_requests": 0.0,
-                    "spam": 0.0,
-                    "hardware_faults": 0.0
-                }
-            }
-        ],
-        "decision_reason": "Выбрана категория 'incidents', score=55.0, отрыв от второго места=55.0"
+        "decision_reason": "Выбрана категория 'incidents', score=71.0, отрыв от второго места=71.0",
+        "move_status": "пропущено: нет имени файла"
     },
     {
+        "file_name": "",
         "subject": "Инструкция на согласование",
         "sender": "k.morozov@company.ru",
         "recipient": "",
         "date": "",
         "text": "Уважаемые коллеги,\n\nНаправляем инструкция на согласование. Просим проверить условия и вернуть с правками или подписью до пятницы.\n\nOtpravleno s iPhone\n\nID заявки: #72296",
         "links": [],
-        "category": "service_requests",
+        "category": "прочее",
         "scores": {
-            "incidents": 0.0,
-            "service_requests": 28.0,
-            "spam": 0.0,
-            "hardware_faults": 0.0
+            "incidents": -21.0,
+            "service_requests": -21.0,
+            "spam": -21.0,
+            "hardware_faults": -21.0
         },
         "matched_subject_markers": [
-            "согласование"
+            "инструкция на согласование"
         ],
         "matched_text_markers": [
-            "согласование"
+            "инструкция на согласование"
         ],
-        "evidence": [
-            {
-                "marker": "согласование",
-                "source": "text",
-                "multiplier": 1,
-                "added_scores": {
-                    "incidents": 0,
-                    "service_requests": 8,
-                    "spam": 0,
-                    "hardware_faults": 0
-                }
-            },
-            {
-                "marker": "согласование",
-                "source": "subject",
-                "multiplier": 2.5,
-                "added_scores": {
-                    "incidents": 0.0,
-                    "service_requests": 20.0,
-                    "spam": 0.0,
-                    "hardware_faults": 0.0
-                }
-            }
-        ],
-        "decision_reason": "Выбрана категория 'service_requests', score=28.0, отрыв от второго места=28.0"
+        "decision_reason": "Лучший результат у категории 'incidents' = -21.0, но нужен минимум 10",
+        "move_status": "пропущено: нет имени файла"
     },
     {
+        "file_name": "",
         "subject": "Закрывающие документы за декабрь",
         "sender": "Kate Brown <k.brown@extern.org>",
         "recipient": "it-support@company.ru",
         "date": "2025-02-24 16:48",
         "text": "Уточните статус оплаты по акту от 10.7.2025. В нашей системе оплата ещё не отражена.\n\nСпасибо.\n\nID заявки: #12757",
         "links": [],
-        "category": "service_requests",
+        "category": "прочее",
         "scores": {
-            "incidents": 0.0,
-            "service_requests": 36.0,
-            "spam": 2.0,
-            "hardware_faults": 0.0
+            "incidents": -10.5,
+            "service_requests": -10.5,
+            "spam": -10.5,
+            "hardware_faults": -10.5
         },
         "matched_subject_markers": [
             "закрывающие документы"
@@ -221,91 +142,37 @@
         "matched_text_markers": [
             "оплата"
         ],
-        "evidence": [
-            {
-                "marker": "оплата",
-                "source": "text",
-                "multiplier": 1,
-                "added_scores": {
-                    "incidents": 0,
-                    "service_requests": 6,
-                    "spam": 2,
-                    "hardware_faults": 0
-                }
-            },
-            {
-                "marker": "закрывающие документы",
-                "source": "subject",
-                "multiplier": 2.5,
-                "added_scores": {
-                    "incidents": 0.0,
-                    "service_requests": 30.0,
-                    "spam": 0.0,
-                    "hardware_faults": 0.0
-                }
-            }
-        ],
-        "decision_reason": "Выбрана категория 'service_requests', score=36.0, отрыв от второго места=34.0"
+        "decision_reason": "Лучший результат у категории 'incidents' = -10.5, но нужен минимум 10",
+        "move_status": "пропущено: нет имени файла"
     },
     {
+        "file_name": "",
         "subject": "Не могу войти в Confluence — у всех отдела",
         "sender": "noreply@jira.internal",
         "recipient": "",
         "date": "",
         "text": "Добрый день.\n\nСервис Confluence не отвечает с 9:15. Пробовали перезайти — не помогает. Несколько коллег из IT подтвердили ту же проблему.\n\nС уважением,\nАлексей Козлов\n\nФайл: error_log.txt",
         "links": [],
-        "category": "service_requests",
+        "category": "incidents",
         "scores": {
-            "incidents": 10.0,
-            "service_requests": 32.5,
+            "incidents": 50.0,
+            "service_requests": 8.0,
             "spam": 0.0,
             "hardware_faults": 2.0
         },
         "matched_subject_markers": [
+            "не могу войти",
             "confluence"
         ],
         "matched_text_markers": [
             "не отвечает",
             "confluence"
         ],
-        "evidence": [
-            {
-                "marker": "не отвечает",
-                "source": "text",
-                "multiplier": 1,
-                "added_scores": {
-                    "incidents": 10,
-                    "service_requests": 1,
-                    "spam": 0,
-                    "hardware_faults": 2
-                }
-            },
-            {
-                "marker": "confluence",
-                "source": "text",
-                "multiplier": 1,
-                "added_scores": {
-                    "incidents": 0,
-                    "service_requests": 9,
-                    "spam": 0,
-                    "hardware_faults": 0
-                }
-            },
-            {
-                "marker": "confluence",
-                "source": "subject",
-                "multiplier": 2.5,
-                "added_scores": {
-                    "incidents": 0.0,
-                    "service_requests": 22.5,
-                    "spam": 0.0,
-                    "hardware_faults": 0.0
-                }
-            }
-        ],
-        "decision_reason": "Выбрана категория 'service_requests', score=32.5, отрыв от второго места=22.5"
+        "decision_reason": "Выбрана категория 'incidents', score=50.0, отрыв от второго места=42.0",
+        "move_status": "пропущено: нет имени файла"
     },
     {
+        "file_name": "",
         "subject": "[IT] [INFO] Плановый отчёт мониторинга",
         "sender": "Людмила Захарова <l.zaharova@corp.local>",
         "recipient": "it-support@company.ru",
@@ -314,121 +181,71 @@
         "links": [],
         "category": "incidents",
         "scores": {
-            "incidents": 13,
-            "service_requests": 0,
-            "spam": 0,
-            "hardware_faults": 0
+            "incidents": 53.0,
+            "service_requests": 0.0,
+            "spam": 0.0,
+            "hardware_faults": 0.0
         },
-        "matched_subject_markers": [],
+        "matched_subject_markers": [
+            "плановый отчет мониторинга"
+        ],
         "matched_text_markers": [
             "healthcheck",
             "alert"
         ],
-        "evidence": [
-            {
-                "marker": "healthcheck",
-                "source": "text",
-                "multiplier": 1,
-                "added_scores": {
-                    "incidents": 6,
-                    "service_requests": 0,
-                    "spam": 0,
-                    "hardware_faults": 0
-                }
-            },
-            {
-                "marker": "alert",
-                "source": "text",
-                "multiplier": 1,
-                "added_scores": {
-                    "incidents": 7,
-                    "service_requests": 0,
-                    "spam": 0,
-                    "hardware_faults": 0
-                }
-            }
-        ],
-        "decision_reason": "Выбрана категория 'incidents', score=13, отрыв от второго места=13"
+        "decision_reason": "Выбрана категория 'incidents', score=53.0, отрыв от второго места=53.0",
+        "move_status": "пропущено: нет имени файла"
     },
     {
+        "file_name": "",
         "subject": "",
         "sender": "o.belova@client.biz",
         "recipient": "",
         "date": "",
         "text": "Добрый день.\n\nУ нас критичный инцидент: корпоративный портал возвращает ошибку 500 уже 40 минут. Затронуты примерно 15 сотрудников. Просим срочно проверить.\n\nOtpravleno s iPhone",
         "links": [],
-        "category": "прочее",
+        "category": "incidents",
         "scores": {
-            "incidents": 10,
-            "service_requests": 8,
+            "incidents": 26,
+            "service_requests": 2,
             "spam": 0,
             "hardware_faults": 0
         },
         "matched_subject_markers": [],
         "matched_text_markers": [
             "корпоративный портал",
+            "затронуты примерно",
             "инцидент"
         ],
-        "evidence": [
-            {
-                "marker": "корпоративный портал",
-                "source": "text",
-                "multiplier": 1,
-                "added_scores": {
-                    "incidents": 0,
-                    "service_requests": 8,
-                    "spam": 0,
-                    "hardware_faults": 0
-                }
-            },
-            {
-                "marker": "инцидент",
-                "source": "text",
-                "multiplier": 1,
-                "added_scores": {
-                    "incidents": 10,
-                    "service_requests": 0,
-                    "spam": 0,
-                    "hardware_faults": 0
-                }
-            }
-        ],
-        "decision_reason": "Слишком маленький отрыв: incidents=10, service_requests=8"
+        "decision_reason": "Выбрана категория 'incidents', score=26, отрыв от второго места=24",
+        "move_status": "пропущено: нет имени файла"
     },
     {
+        "file_name": "",
         "subject": "Запрос от внешнего пользователя",
         "sender": "Иван Петров <i.petrov@company.ru>",
         "recipient": "it-support@company.ru",
         "date": "24.01.2025 11:10",
         "text": "Коллеги, привет!\n\nКлиент просит прислать актуальную инструкцию по работе с личным кабинетом.",
         "links": [],
-        "category": "service_requests",
+        "category": "прочее",
         "scores": {
-            "incidents": 0.0,
-            "service_requests": 15.0,
-            "spam": 0.0,
-            "hardware_faults": 0.0
+            "incidents": -6.0,
+            "service_requests": -3.5,
+            "spam": -6.0,
+            "hardware_faults": -6.0
         },
         "matched_subject_markers": [
             "запрос"
         ],
-        "matched_text_markers": [],
-        "evidence": [
-            {
-                "marker": "запрос",
-                "source": "subject",
-                "multiplier": 2.5,
-                "added_scores": {
-                    "incidents": 0.0,
-                    "service_requests": 15.0,
-                    "spam": 0.0,
-                    "hardware_faults": 0.0
-                }
-            }
+        "matched_text_markers": [
+            "актуальную инструкцию"
         ],
-        "decision_reason": "Выбрана категория 'service_requests', score=15.0, отрыв от второго места=15.0"
+        "decision_reason": "Лучший результат у категории 'service_requests' = -3.5, но нужен минимум 10",
+        "move_status": "пропущено: нет имени файла"
     },
     {
+        "file_name": "",
         "subject": "Заявка на отпуск",
         "sender": "Кирилл Морозов <k.morozov@company.ru>",
         "recipient": "it-support@company.ru",
@@ -437,92 +254,27 @@
         "links": [],
         "category": "service_requests",
         "scores": {
-            "incidents": 0.0,
-            "service_requests": 62.5,
-            "spam": 3.0,
-            "hardware_faults": 6.0
+            "incidents": -7.5,
+            "service_requests": 34.0,
+            "spam": -7.5,
+            "hardware_faults": -7.5
         },
         "matched_subject_markers": [
             "отпуск",
             "заявка"
         ],
         "matched_text_markers": [
-            "рабочее место",
+            "доступы для нового сотрудника",
+            "подготовить рабочее место",
             "вложение",
             "invoice",
             "запрос"
         ],
-        "evidence": [
-            {
-                "marker": "рабочее место",
-                "source": "text",
-                "multiplier": 1,
-                "added_scores": {
-                    "incidents": 0,
-                    "service_requests": 6,
-                    "spam": 0,
-                    "hardware_faults": 6
-                }
-            },
-            {
-                "marker": "вложение",
-                "source": "text",
-                "multiplier": 1,
-                "added_scores": {
-                    "incidents": 0,
-                    "service_requests": 3,
-                    "spam": 1,
-                    "hardware_faults": 0
-                }
-            },
-            {
-                "marker": "invoice",
-                "source": "text",
-                "multiplier": 1,
-                "added_scores": {
-                    "incidents": 0,
-                    "service_requests": 5,
-                    "spam": 2,
-                    "hardware_faults": 0
-                }
-            },
-            {
-                "marker": "запрос",
-                "source": "text",
-                "multiplier": 1,
-                "added_scores": {
-                    "incidents": 0,
-                    "service_requests": 6,
-                    "spam": 0,
-                    "hardware_faults": 0
-                }
-            },
-            {
-                "marker": "отпуск",
-                "source": "subject",
-                "multiplier": 2.5,
-                "added_scores": {
-                    "incidents": 0.0,
-                    "service_requests": 22.5,
-                    "spam": 0.0,
-                    "hardware_faults": 0.0
-                }
-            },
-            {
-                "marker": "заявка",
-                "source": "subject",
-                "multiplier": 2.5,
-                "added_scores": {
-                    "incidents": 0.0,
-                    "service_requests": 20.0,
-                    "spam": 0.0,
-                    "hardware_faults": 0.0
-                }
-            }
-        ],
-        "decision_reason": "Выбрана категория 'service_requests', score=62.5, отрыв от второго места=56.5"
+        "decision_reason": "Выбрана категория 'service_requests', score=34.0, отрыв от второго места=41.5",
+        "move_status": "пропущено: нет имени файла"
     },
     {
+        "file_name": "",
         "subject": "URGENT: BI-система не отвечает",
         "sender": "v.gromov@partner.ru",
         "recipient": "",
@@ -531,8 +283,8 @@
         "links": [],
         "category": "incidents",
         "scores": {
-            "incidents": 35.0,
-            "service_requests": 30.5,
+            "incidents": 51.0,
+            "service_requests": 9.5,
             "spam": 0.0,
             "hardware_faults": 5.0
         },
@@ -541,104 +293,40 @@
             "bi-система"
         ],
         "matched_text_markers": [
+            "затронуты примерно",
             "bi-система",
             "инцидент"
         ],
-        "evidence": [
-            {
-                "marker": "bi-система",
-                "source": "text",
-                "multiplier": 1,
-                "added_scores": {
-                    "incidents": 0,
-                    "service_requests": 8,
-                    "spam": 0,
-                    "hardware_faults": 0
-                }
-            },
-            {
-                "marker": "инцидент",
-                "source": "text",
-                "multiplier": 1,
-                "added_scores": {
-                    "incidents": 10,
-                    "service_requests": 0,
-                    "spam": 0,
-                    "hardware_faults": 0
-                }
-            },
-            {
-                "marker": "не отвечает",
-                "source": "subject",
-                "multiplier": 2.5,
-                "added_scores": {
-                    "incidents": 25.0,
-                    "service_requests": 2.5,
-                    "spam": 0.0,
-                    "hardware_faults": 5.0
-                }
-            },
-            {
-                "marker": "bi-система",
-                "source": "subject",
-                "multiplier": 2.5,
-                "added_scores": {
-                    "incidents": 0.0,
-                    "service_requests": 20.0,
-                    "spam": 0.0,
-                    "hardware_faults": 0.0
-                }
-            }
-        ],
-        "decision_reason": "Выбрана категория 'incidents', score=35.0, отрыв от второго места=4.5"
+        "decision_reason": "Выбрана категория 'incidents', score=51.0, отрыв от второго места=41.5",
+        "move_status": "пропущено: нет имени файла"
     },
     {
+        "file_name": "",
         "subject": "Fwd: Акт выполненных работ — апрель",
         "sender": "Наталья Лебедева <n.lebedeva@corp.local>",
         "recipient": "it-support@company.ru",
         "date": "2025-03-08 11:42",
         "text": "Просим подтвердить получение счёта №5247. Оплата по договору должна пройти до 9.7.2025.\n\nВо вложении: screenshot.png",
         "links": [],
-        "category": "service_requests",
+        "category": "прочее",
         "scores": {
-            "incidents": 0.0,
-            "service_requests": 26.0,
-            "spam": 2.0,
-            "hardware_faults": 0.0
+            "incidents": -27.0,
+            "service_requests": -27.0,
+            "spam": -27.0,
+            "hardware_faults": -27.0
         },
         "matched_subject_markers": [
-            "акт"
+            "акт выполненных работ"
         ],
         "matched_text_markers": [
-            "оплата"
+            "оплата по договору",
+            "получение счета"
         ],
-        "evidence": [
-            {
-                "marker": "оплата",
-                "source": "text",
-                "multiplier": 1,
-                "added_scores": {
-                    "incidents": 0,
-                    "service_requests": 6,
-                    "spam": 2,
-                    "hardware_faults": 0
-                }
-            },
-            {
-                "marker": "акт",
-                "source": "subject",
-                "multiplier": 2.5,
-                "added_scores": {
-                    "incidents": 0.0,
-                    "service_requests": 20.0,
-                    "spam": 0.0,
-                    "hardware_faults": 0.0
-                }
-            }
-        ],
-        "decision_reason": "Выбрана категория 'service_requests', score=26.0, отрыв от второго места=24.0"
+        "decision_reason": "Лучший результат у категории 'incidents' = -27.0, но нужен минимум 10",
+        "move_status": "пропущено: нет имени файла"
     },
     {
+        "file_name": "",
         "subject": "Неисправность оборудования: гарнитура",
         "sender": "Тимур Андреев <t.andreev@company.ru>",
         "recipient": "it-support@company.ru",
@@ -647,8 +335,8 @@
         "links": [],
         "category": "hardware_faults",
         "scores": {
-            "incidents": 0.0,
-            "service_requests": 7.0,
+            "incidents": 16.0,
+            "service_requests": 0.0,
             "spam": 0.0,
             "hardware_faults": 35.0
         },
@@ -656,92 +344,49 @@
             "гарнитура"
         ],
         "matched_text_markers": [
+            "не определяется системой",
             "гарнитура"
         ],
-        "evidence": [
-            {
-                "marker": "гарнитура",
-                "source": "text",
-                "multiplier": 1,
-                "added_scores": {
-                    "incidents": 0,
-                    "service_requests": 2,
-                    "spam": 0,
-                    "hardware_faults": 10
-                }
-            },
-            {
-                "marker": "гарнитура",
-                "source": "subject",
-                "multiplier": 2.5,
-                "added_scores": {
-                    "incidents": 0.0,
-                    "service_requests": 5.0,
-                    "spam": 0.0,
-                    "hardware_faults": 25.0
-                }
-            }
-        ],
-        "decision_reason": "Выбрана категория 'hardware_faults', score=35.0, отрыв от второго места=28.0"
+        "decision_reason": "Выбрана категория 'hardware_faults', score=35.0, отрыв от второго места=19.0",
+        "move_status": "пропущено: нет имени файла"
     },
     {
+        "file_name": "",
         "subject": "URGENT: Больничный лист",
         "sender": "Павел Соколов <p.sokolov@vendor.net>",
         "recipient": "it-support@company.ru",
         "date": "2025-01-30 09:47",
         "text": "Здравствуйте!\n\nПрошу согласовать ежегодный отпуск с 9.7.2025 на 14 дней.\n\nЕсли вопрос не к вам — перенаправьте, пожалуйста.\n\nВо вложении: screenshot.png",
         "links": [],
-        "category": "service_requests",
+        "category": "прочее",
         "scores": {
-            "incidents": 0.0,
-            "service_requests": 31.5,
-            "spam": 0.0,
-            "hardware_faults": 0.0
+            "incidents": -21.0,
+            "service_requests": -21.0,
+            "spam": -21.0,
+            "hardware_faults": -21.0
         },
         "matched_subject_markers": [
-            "больничный"
+            "больничный лист"
         ],
         "matched_text_markers": [
-            "отпуск"
+            "ежегодный отпуск"
         ],
-        "evidence": [
-            {
-                "marker": "отпуск",
-                "source": "text",
-                "multiplier": 1,
-                "added_scores": {
-                    "incidents": 0,
-                    "service_requests": 9,
-                    "spam": 0,
-                    "hardware_faults": 0
-                }
-            },
-            {
-                "marker": "больничный",
-                "source": "subject",
-                "multiplier": 2.5,
-                "added_scores": {
-                    "incidents": 0.0,
-                    "service_requests": 22.5,
-                    "spam": 0.0,
-                    "hardware_faults": 0.0
-                }
-            }
-        ],
-        "decision_reason": "Выбрана категория 'service_requests', score=31.5, отрыв от второго места=31.5"
+        "decision_reason": "Лучший результат у категории 'incidents' = -21.0, но нужен минимум 10",
+        "move_status": "пропущено: нет имени файла"
     },
     {
+        "file_name": "",
         "subject": "Ошибка в антивирус после обновления",
         "sender": "Иван Петров <i.petrov@company.ru>",
         "recipient": "it-support@company.ru",
         "date": "2025-03-27 10:40",
         "text": "Hi,\n\nПосле обновления системы антивирус не открывает файлы нужного формата. Раньше всё работало.\n\nBest regards,\nСветлана Попова\n\nПрикрепил: contract_v2.docx\n\nID заявки: #19862",
         "links": [],
-        "category": "service_requests",
+        "category": "incidents",
         "scores": {
-            "incidents": 19.5,
-            "service_requests": 30.5,
-            "spam": 3.5,
+            "incidents": 44.5,
+            "service_requests": 9.5,
+            "spam": 0.0,
             "hardware_faults": 2.5
         },
         "matched_subject_markers": [
@@ -749,104 +394,39 @@
             "ошибка"
         ],
         "matched_text_markers": [
+            "не открывает файлы нужного формата",
+            "после обновления системы",
             "антивирус"
         ],
-        "evidence": [
-            {
-                "marker": "антивирус",
-                "source": "text",
-                "multiplier": 1,
-                "added_scores": {
-                    "incidents": 2,
-                    "service_requests": 8,
-                    "spam": 1,
-                    "hardware_faults": 0
-                }
-            },
-            {
-                "marker": "антивирус",
-                "source": "subject",
-                "multiplier": 2.5,
-                "added_scores": {
-                    "incidents": 5.0,
-                    "service_requests": 20.0,
-                    "spam": 2.5,
-                    "hardware_faults": 0.0
-                }
-            },
-            {
-                "marker": "ошибка",
-                "source": "subject",
-                "multiplier": 2.5,
-                "added_scores": {
-                    "incidents": 12.5,
-                    "service_requests": 2.5,
-                    "spam": 0.0,
-                    "hardware_faults": 2.5
-                }
-            }
-        ],
-        "decision_reason": "Выбрана категория 'service_requests', score=30.5, отрыв от второго места=11.0"
+        "decision_reason": "Выбрана категория 'incidents', score=44.5, отрыв от второго места=35.0",
+        "move_status": "пропущено: нет имени файла"
     },
     {
+        "file_name": "",
         "subject": "Закрывающие документы за март",
         "sender": "Тимур Андреев <t.andreev@company.ru>",
         "recipient": "it-support@company.ru",
         "date": "2025-05-30 16:09",
         "text": "Hi,\n\nНаправляем счёт и акт за оказанные услуги за март. Просьба передать в бухгалтерию для оплаты до конца недели.\n\nСпасибо.\n\nФайл: error_log.txt\n\nID заявки: #83385",
         "links": [],
-        "category": "service_requests",
+        "category": "прочее",
         "scores": {
-            "incidents": 0.0,
-            "service_requests": 46.0,
-            "spam": 1.0,
-            "hardware_faults": 0.0
+            "incidents": -13.5,
+            "service_requests": -13.5,
+            "spam": -13.5,
+            "hardware_faults": -13.5
         },
         "matched_subject_markers": [
             "закрывающие документы"
         ],
         "matched_text_markers": [
-            "счет",
-            "акт"
+            "направляем счет и акт"
         ],
-        "evidence": [
-            {
-                "marker": "счет",
-                "source": "text",
-                "multiplier": 1,
-                "added_scores": {
-                    "incidents": 0,
-                    "service_requests": 8,
-                    "spam": 1,
-                    "hardware_faults": 0
-                }
-            },
-            {
-                "marker": "акт",
-                "source": "text",
-                "multiplier": 1,
-                "added_scores": {
-                    "incidents": 0,
-                    "service_requests": 8,
-                    "spam": 0,
-                    "hardware_faults": 0
-                }
-            },
-            {
-                "marker": "закрывающие документы",
-                "source": "subject",
-                "multiplier": 2.5,
-                "added_scores": {
-                    "incidents": 0.0,
-                    "service_requests": 30.0,
-                    "spam": 0.0,
-                    "hardware_faults": 0.0
-                }
-            }
-        ],
-        "decision_reason": "Выбрана категория 'service_requests', score=46.0, отрыв от второго места=45.0"
+        "decision_reason": "Лучший результат у категории 'incidents' = -13.5, но нужен минимум 10",
+        "move_status": "пропущено: нет имени файла"
     },
     {
+        "file_name": "",
         "subject": "Неисправность оборудования: сканер",
         "sender": "Ольга Белова <o.belova@client.biz>",
         "recipient": "it-support@company.ru",
@@ -856,9 +436,9 @@
         "category": "hardware_faults",
         "scores": {
             "incidents": 3.0,
-            "service_requests": 8.0,
+            "service_requests": 1.0,
             "spam": 0.0,
-            "hardware_faults": 58.0
+            "hardware_faults": 51.0
         },
         "matched_subject_markers": [
             "сканер"
@@ -867,44 +447,11 @@
             "не включается",
             "сканер"
         ],
-        "evidence": [
-            {
-                "marker": "не включается",
-                "source": "text",
-                "multiplier": 1,
-                "added_scores": {
-                    "incidents": 3,
-                    "service_requests": 1,
-                    "spam": 0,
-                    "hardware_faults": 16
-                }
-            },
-            {
-                "marker": "сканер",
-                "source": "text",
-                "multiplier": 1,
-                "added_scores": {
-                    "incidents": 0,
-                    "service_requests": 2,
-                    "spam": 0,
-                    "hardware_faults": 12
-                }
-            },
-            {
-                "marker": "сканер",
-                "source": "subject",
-                "multiplier": 2.5,
-                "added_scores": {
-                    "incidents": 0.0,
-                    "service_requests": 5.0,
-                    "spam": 0.0,
-                    "hardware_faults": 30.0
-                }
-            }
-        ],
-        "decision_reason": "Выбрана категория 'hardware_faults', score=58.0, отрыв от второго места=50.0"
+        "decision_reason": "Выбрана категория 'hardware_faults', score=51.0, отрыв от второго места=48.0",
+        "move_status": "пропущено: нет имени файла"
     },
     {
+        "file_name": "",
         "subject": "Правки к техническое заданиеу",
         "sender": "Ольга Белова <o.belova@client.biz>",
         "recipient": "it-support@company.ru",
@@ -913,53 +460,32 @@
         "links": [],
         "category": "прочее",
         "scores": {
-            "incidents": 0,
-            "service_requests": 8,
-            "spam": 3,
-            "hardware_faults": 0
+            "incidents": -6,
+            "service_requests": -4,
+            "spam": -6,
+            "hardware_faults": -6
         },
         "matched_subject_markers": [],
         "matched_text_markers": [
+            "новая версия",
             "вложение",
             "invoice"
         ],
-        "evidence": [
-            {
-                "marker": "вложение",
-                "source": "text",
-                "multiplier": 1,
-                "added_scores": {
-                    "incidents": 0,
-                    "service_requests": 3,
-                    "spam": 1,
-                    "hardware_faults": 0
-                }
-            },
-            {
-                "marker": "invoice",
-                "source": "text",
-                "multiplier": 1,
-                "added_scores": {
-                    "incidents": 0,
-                    "service_requests": 5,
-                    "spam": 2,
-                    "hardware_faults": 0
-                }
-            }
-        ],
-        "decision_reason": "Лучший результат у категории 'service_requests' = 8, но нужен минимум 10"
+        "decision_reason": "Лучший результат у категории 'service_requests' = -4, но нужен минимум 10",
+        "move_status": "пропущено: нет имени файла"
     },
     {
+        "file_name": "",
         "subject": "Проблема с установкой Zoom",
         "sender": "alerts@grafana.internal",
         "recipient": "",
         "date": "",
         "text": "Zoom перестал запускаться после вчерашнего обновления. Появляется ошибка при старте. Переустановка не помогла.\n\nПрикрепил: contract_v2.docx",
         "links": [],
-        "category": "service_requests",
+        "category": "incidents",
         "scores": {
-            "incidents": 5.0,
-            "service_requests": 25.5,
+            "incidents": 37.0,
+            "service_requests": 8.0,
             "spam": 0.0,
             "hardware_faults": 1.0
         },
@@ -967,44 +493,12 @@
             "zoom"
         ],
         "matched_text_markers": [
+            "переустановка не помогла",
+            "перестал запускаться",
             "ошибка",
             "zoom"
         ],
-        "evidence": [
-            {
-                "marker": "ошибка",
-                "source": "text",
-                "multiplier": 1,
-                "added_scores": {
-                    "incidents": 5,
-                    "service_requests": 1,
-                    "spam": 0,
-                    "hardware_faults": 1
-                }
-            },
-            {
-                "marker": "zoom",
-                "source": "text",
-                "multiplier": 1,
-                "added_scores": {
-                    "incidents": 0,
-                    "service_requests": 7,
-                    "spam": 0,
-                    "hardware_faults": 0
-                }
-            },
-            {
-                "marker": "zoom",
-                "source": "subject",
-                "multiplier": 2.5,
-                "added_scores": {
-                    "incidents": 0.0,
-                    "service_requests": 17.5,
-                    "spam": 0.0,
-                    "hardware_faults": 0.0
-                }
-            }
-        ],
-        "decision_reason": "Выбрана категория 'service_requests', score=25.5, отрыв от второго места=20.5"
+        "decision_reason": "Выбрана категория 'incidents', score=37.0, отрыв от второго места=29.0",
+        "move_status": "пропущено: нет имени файла"
     }
 ]
