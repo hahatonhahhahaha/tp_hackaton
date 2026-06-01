@@ -3,6 +3,21 @@ import shutil
 import sys
 from pathlib import Path
 
+DIR = Path(__file__).resolve().parent
+ROT = DIR.parent
+
+if str(ROT) not in sys.path:
+    sys.path.insert(0, str(ROT))
+
+try:
+    from app.ml_classifier import inf as mli
+except Exception:
+    def mli(sub, txt):
+        return {
+            "ml_category": "",
+            "ml_status": "off",
+        }
+
 from json_uploader import json_uploader
 from score import classify_emails, load_weight
 
@@ -87,6 +102,9 @@ def run_classifier(
     emails = json_uploader(json_path)
     weight = load_weight(csv_path)
     results = classify_emails(emails, weight)
+
+    for res, eml in zip(results, emails):
+        res.update(mli(eml.subject, eml.text))
 
     if input_folder is not None and output_folder is not None:
         move_email_files(results, input_folder, output_folder)

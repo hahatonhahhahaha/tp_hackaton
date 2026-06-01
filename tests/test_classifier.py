@@ -11,7 +11,8 @@ sys.path.insert(0, str(CLASSIFIER_DIR))
 MailConsoleApp = importlib.import_module("app.app").MailConsoleApp
 MailParser = importlib.import_module("app.mail_parser").MailParser
 json_uploader = importlib.import_module("json_uploader").json_uploader
-run_classifier = importlib.import_module("main").run_classifier
+mod = importlib.import_module("main")
+run_classifier = mod.run_classifier
 score = importlib.import_module("score")
 classify_emails = score.classify_emails
 load_weight = score.load_weight
@@ -166,12 +167,21 @@ def test_full_pipeline_parses_classifies_and_moves_files(tmp_path):
 
     assert MailConsoleApp(str(input_folder), str(json_path)).run() == 0
 
-    results = run_classifier(json_path, input_folder, output_folder, result_path)
+    old = mod.mli
+    mod.mli = lambda sub, txt: {"ml_category": "spam", "ml_status": "ok"}
+
+    try:
+        results = run_classifier(json_path, input_folder, output_folder, result_path)
+    finally:
+        mod.mli = old
+
     by_file = {result["file_name"]: result for result in results}
 
     assert by_file["mail_0001.txt"]["category"] == "incidents"
     assert by_file["mail_0002.txt"]["category"] == "service_requests"
     assert by_file["mail_0003.txt"]["category"] == "прочее"
+    assert by_file["mail_0001.txt"]["ml_category"] == "spam"
+    assert by_file["mail_0001.txt"]["ml_status"] == "ok"
     assert (output_folder / "incidents" / "mail_0001.txt").exists()
     assert (output_folder / "service_requests" / "mail_0002.txt").exists()
     assert (output_folder / "прочее" / "mail_0003.txt").exists()

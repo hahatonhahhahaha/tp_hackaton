@@ -1,0 +1,5 @@
+{
+  "encoder_name": "cointegrated/rubert-tiny2",
+  "classifier_type": "KNeighborsClassifier",
+  "status": "model_trained"
+}

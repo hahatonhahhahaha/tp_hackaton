@@ -51,9 +51,6 @@ class MailParser:
 
     def _find_links(self, body: str) -> list[str]:
         return re.findall(r"https?://\S+", body)
-    
-    def _find_attachments(self, body: str) -> list[str]:
-        return re.findall(r"\b[\w.-]+\.(?:pdf|docx|doc|xlsx|xls|txt|zip|rar|png|jpg|jpeg)\b", body, flags=re.IGNORECASE)
 
     def _find_attachments(self, body: str) -> list[str]:
         return re.findall(

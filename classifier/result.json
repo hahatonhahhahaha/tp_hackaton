@@ -7,6 +7,7 @@
         "date": "",
         "text": "Здравствуйте!\n\nПосле обновления системы браузер Chrome не открывает файлы нужного формата. Раньше всё работало.\n\nСпасибо.",
         "links": [],
+        "attachments": [],
         "category": "incidents",
         "scores": {
             "incidents": 32,
@@ -20,7 +21,8 @@
             "после обновления системы"
         ],
         "decision_reason": "Выбрана категория 'incidents', score=32, отрыв от второго места=32",
-        "move_status": "пропущено: нет имени файла"
+        "ml_category": "",
+        "ml_status": "ModuleNotFoundError"
     },
     {
         "file_name": "",
@@ -30,6 +32,7 @@
         "date": "03.04.2025 11:08",
         "text": "Добрый день.\n\nКлиент обращается повторно — заявка висит без ответа уже 3 дня. Прошу срочно разобраться.\n\nP.S. Это уже второй запрос по данной теме.",
         "links": [],
+        "attachments": [],
         "category": "incidents",
         "scores": {
             "incidents": 16.0,
@@ -45,7 +48,8 @@
             "запрос"
         ],
         "decision_reason": "Выбрана категория 'incidents', score=16.0, отрыв от второго места=12.5",
-        "move_status": "пропущено: нет имени файла"
+        "ml_category": "",
+        "ml_status": "ModuleNotFoundError"
     },
     {
         "file_name": "",
@@ -55,6 +59,7 @@
         "date": "2025-03-06 16:55",
         "text": "Hi,\n\nНапоминаем: в пятницу плановые технические работы с 22:00 до 02:00. Ряд систем будет недоступен.\n\nС уважением,\nСветлана Попова",
         "links": [],
+        "attachments": [],
         "category": "прочее",
         "scores": {
             "incidents": -13.0,
@@ -70,7 +75,8 @@
             "недоступен"
         ],
         "decision_reason": "Лучший результат у категории 'incidents' = -13.0, но нужен минимум 10",
-        "move_status": "пропущено: нет имени файла"
+        "ml_category": "",
+        "ml_status": "ModuleNotFoundError"
     },
     {
         "file_name": "",
@@ -80,6 +86,7 @@
         "date": "28.01.2025 18:19",
         "text": "Добрый день.\n\nУ нас критичный инцидент: система согласования возвращает ошибку 500 уже 40 минут. Затронуты примерно 15 сотрудников. Просим срочно проверить.\n\nЕсли вопрос не к вам — перенаправьте, пожалуйста.\n\nПрикрепил: contract_v2.docx",
         "links": [],
+        "attachments": [],
         "category": "incidents",
         "scores": {
             "incidents": 71.0,
@@ -95,7 +102,8 @@
             "инцидент"
         ],
         "decision_reason": "Выбрана категория 'incidents', score=71.0, отрыв от второго места=71.0",
-        "move_status": "пропущено: нет имени файла"
+        "ml_category": "",
+        "ml_status": "ModuleNotFoundError"
     },
     {
         "file_name": "",
@@ -105,6 +113,7 @@
         "date": "",
         "text": "Уважаемые коллеги,\n\nНаправляем инструкция на согласование. Просим проверить условия и вернуть с правками или подписью до пятницы.\n\nOtpravleno s iPhone\n\nID заявки: #72296",
         "links": [],
+        "attachments": [],
         "category": "прочее",
         "scores": {
             "incidents": -21.0,
@@ -119,7 +128,8 @@
             "инструкция на согласование"
         ],
         "decision_reason": "Лучший результат у категории 'incidents' = -21.0, но нужен минимум 10",
-        "move_status": "пропущено: нет имени файла"
+        "ml_category": "",
+        "ml_status": "ModuleNotFoundError"
     },
     {
         "file_name": "",
@@ -129,6 +139,7 @@
         "date": "2025-02-24 16:48",
         "text": "Уточните статус оплаты по акту от 10.7.2025. В нашей системе оплата ещё не отражена.\n\nСпасибо.\n\nID заявки: #12757",
         "links": [],
+        "attachments": [],
         "category": "прочее",
         "scores": {
             "incidents": -10.5,
@@ -143,7 +154,8 @@
             "оплата"
         ],
         "decision_reason": "Лучший результат у категории 'incidents' = -10.5, но нужен минимум 10",
-        "move_status": "пропущено: нет имени файла"
+        "ml_category": "",
+        "ml_status": "ModuleNotFoundError"
     },
     {
         "file_name": "",
@@ -153,6 +165,7 @@
         "date": "",
         "text": "Добрый день.\n\nСервис Confluence не отвечает с 9:15. Пробовали перезайти — не помогает. Несколько коллег из IT подтвердили ту же проблему.\n\nС уважением,\nАлексей Козлов\n\nФайл: error_log.txt",
         "links": [],
+        "attachments": [],
         "category": "incidents",
         "scores": {
             "incidents": 50.0,
@@ -169,7 +182,8 @@
             "confluence"
         ],
         "decision_reason": "Выбрана категория 'incidents', score=50.0, отрыв от второго места=42.0",
-        "move_status": "пропущено: нет имени файла"
+        "ml_category": "",
+        "ml_status": "ModuleNotFoundError"
     },
     {
         "file_name": "",
@@ -179,6 +193,7 @@
         "date": "2025-03-04 15:51",
         "text": "Hi,\n\nALERT: Database cluster не прошёл healthcheck 3 раза подряд.\nТребуется проверка.\n\nФайл: error_log.txt",
         "links": [],
+        "attachments": [],
         "category": "incidents",
         "scores": {
             "incidents": 53.0,
@@ -194,7 +209,8 @@
             "alert"
         ],
         "decision_reason": "Выбрана категория 'incidents', score=53.0, отрыв от второго места=53.0",
-        "move_status": "пропущено: нет имени файла"
+        "ml_category": "",
+        "ml_status": "ModuleNotFoundError"
     },
     {
         "file_name": "",
@@ -204,6 +220,7 @@
         "date": "",
         "text": "Добрый день.\n\nУ нас критичный инцидент: корпоративный портал возвращает ошибку 500 уже 40 минут. Затронуты примерно 15 сотрудников. Просим срочно проверить.\n\nOtpravleno s iPhone",
         "links": [],
+        "attachments": [],
         "category": "incidents",
         "scores": {
             "incidents": 26,
@@ -218,7 +235,8 @@
             "инцидент"
         ],
         "decision_reason": "Выбрана категория 'incidents', score=26, отрыв от второго места=24",
-        "move_status": "пропущено: нет имени файла"
+        "ml_category": "",
+        "ml_status": "ModuleNotFoundError"
     },
     {
         "file_name": "",
@@ -228,6 +246,7 @@
         "date": "24.01.2025 11:10",
         "text": "Коллеги, привет!\n\nКлиент просит прислать актуальную инструкцию по работе с личным кабинетом.",
         "links": [],
+        "attachments": [],
         "category": "прочее",
         "scores": {
             "incidents": -6.0,
@@ -242,7 +261,8 @@
             "актуальную инструкцию"
         ],
         "decision_reason": "Лучший результат у категории 'service_requests' = -3.5, но нужен минимум 10",
-        "move_status": "пропущено: нет имени файла"
+        "ml_category": "",
+        "ml_status": "ModuleNotFoundError"
     },
     {
         "file_name": "",
@@ -252,6 +272,7 @@
         "date": "2025-04-19 16:42",
         "text": "Прошу подготовить рабочее место и доступы для нового сотрудника noreply. Выход на работу — в следующий понедельник. Отдел: Логистика.\n\nP.S. Это уже второй запрос по данной теме.\n\nВложение: invoice.pdf\n\nID заявки: #86569",
         "links": [],
+        "attachments": [],
         "category": "service_requests",
         "scores": {
             "incidents": -7.5,
@@ -260,8 +281,8 @@
             "hardware_faults": -7.5
         },
         "matched_subject_markers": [
-            "отпуск",
-            "заявка"
+            "заявка",
+            "отпуск"
         ],
         "matched_text_markers": [
             "доступы для нового сотрудника",
@@ -271,7 +292,8 @@
             "запрос"
         ],
         "decision_reason": "Выбрана категория 'service_requests', score=34.0, отрыв от второго места=41.5",
-        "move_status": "пропущено: нет имени файла"
+        "ml_category": "",
+        "ml_status": "ModuleNotFoundError"
     },
     {
         "file_name": "",
@@ -281,6 +303,7 @@
         "date": "",
         "text": "Уважаемые коллеги,\n\nУ нас критичный инцидент: BI-система возвращает ошибку 500 уже 40 минут. Затронуты примерно 15 сотрудников. Просим срочно проверить.\n\nСпасибо.\n\nПрикрепил: contract_v2.docx",
         "links": [],
+        "attachments": [],
         "category": "incidents",
         "scores": {
             "incidents": 51.0,
@@ -298,7 +321,8 @@
             "инцидент"
         ],
         "decision_reason": "Выбрана категория 'incidents', score=51.0, отрыв от второго места=41.5",
-        "move_status": "пропущено: нет имени файла"
+        "ml_category": "",
+        "ml_status": "ModuleNotFoundError"
     },
     {
         "file_name": "",
@@ -308,6 +332,7 @@
         "date": "2025-03-08 11:42",
         "text": "Просим подтвердить получение счёта №5247. Оплата по договору должна пройти до 9.7.2025.\n\nВо вложении: screenshot.png",
         "links": [],
+        "attachments": [],
         "category": "прочее",
         "scores": {
             "incidents": -27.0,
@@ -323,7 +348,8 @@
             "получение счета"
         ],
         "decision_reason": "Лучший результат у категории 'incidents' = -27.0, но нужен минимум 10",
-        "move_status": "пропущено: нет имени файла"
+        "ml_category": "",
+        "ml_status": "ModuleNotFoundError"
     },
     {
         "file_name": "",
@@ -333,12 +359,13 @@
         "date": "2025-01-18 11:23",
         "text": "Hi,\n\nПрошу принять заявку на ремонт. Устройство: гарнитура. Симптомы: не определяется системой. Сотрудник: Михаил Сидоров.\n\nЕсли вопрос не к вам — перенаправьте, пожалуйста.",
         "links": [],
+        "attachments": [],
         "category": "hardware_faults",
         "scores": {
-            "incidents": 16.0,
+            "incidents": 0.0,
             "service_requests": 0.0,
             "spam": 0.0,
-            "hardware_faults": 35.0
+            "hardware_faults": 51.0
         },
         "matched_subject_markers": [
             "гарнитура"
@@ -347,8 +374,9 @@
             "не определяется системой",
             "гарнитура"
         ],
-        "decision_reason": "Выбрана категория 'hardware_faults', score=35.0, отрыв от второго места=19.0",
-        "move_status": "пропущено: нет имени файла"
+        "decision_reason": "Выбрана категория 'hardware_faults', score=51.0, отрыв от второго места=51.0",
+        "ml_category": "",
+        "ml_status": "ModuleNotFoundError"
     },
     {
         "file_name": "",
@@ -358,6 +386,7 @@
         "date": "2025-01-30 09:47",
         "text": "Здравствуйте!\n\nПрошу согласовать ежегодный отпуск с 9.7.2025 на 14 дней.\n\nЕсли вопрос не к вам — перенаправьте, пожалуйста.\n\nВо вложении: screenshot.png",
         "links": [],
+        "attachments": [],
         "category": "прочее",
         "scores": {
             "incidents": -21.0,
@@ -372,7 +401,8 @@
             "ежегодный отпуск"
         ],
         "decision_reason": "Лучший результат у категории 'incidents' = -21.0, но нужен минимум 10",
-        "move_status": "пропущено: нет имени файла"
+        "ml_category": "",
+        "ml_status": "ModuleNotFoundError"
     },
     {
         "file_name": "",
@@ -382,6 +412,7 @@
         "date": "2025-03-27 10:40",
         "text": "Hi,\n\nПосле обновления системы антивирус не открывает файлы нужного формата. Раньше всё работало.\n\nBest regards,\nСветлана Попова\n\nПрикрепил: contract_v2.docx\n\nID заявки: #19862",
         "links": [],
+        "attachments": [],
         "category": "incidents",
         "scores": {
             "incidents": 44.5,
@@ -399,7 +430,8 @@
             "антивирус"
         ],
         "decision_reason": "Выбрана категория 'incidents', score=44.5, отрыв от второго места=35.0",
-        "move_status": "пропущено: нет имени файла"
+        "ml_category": "",
+        "ml_status": "ModuleNotFoundError"
     },
     {
         "file_name": "",
@@ -409,6 +441,7 @@
         "date": "2025-05-30 16:09",
         "text": "Hi,\n\nНаправляем счёт и акт за оказанные услуги за март. Просьба передать в бухгалтерию для оплаты до конца недели.\n\nСпасибо.\n\nФайл: error_log.txt\n\nID заявки: #83385",
         "links": [],
+        "attachments": [],
         "category": "прочее",
         "scores": {
             "incidents": -13.5,
@@ -423,7 +456,8 @@
             "направляем счет и акт"
         ],
         "decision_reason": "Лучший результат у категории 'incidents' = -13.5, но нужен минимум 10",
-        "move_status": "пропущено: нет имени файла"
+        "ml_category": "",
+        "ml_status": "ModuleNotFoundError"
     },
     {
         "file_name": "",
@@ -433,6 +467,7 @@
         "date": "11.02.2025 10:56",
         "text": "Hi,\n\nсканер не включается с вчерашнего дня. Пробовал перезагрузить — не помогло. Нужна помощь.\n\nOtpravleno s iPhone",
         "links": [],
+        "attachments": [],
         "category": "hardware_faults",
         "scores": {
             "incidents": 3.0,
@@ -448,7 +483,8 @@
             "сканер"
         ],
         "decision_reason": "Выбрана категория 'hardware_faults', score=51.0, отрыв от второго места=48.0",
-        "move_status": "пропущено: нет имени файла"
+        "ml_category": "",
+        "ml_status": "ModuleNotFoundError"
     },
     {
         "file_name": "",
@@ -458,6 +494,7 @@
         "date": "21.02.2025 15:22",
         "text": "Добрый день.\n\nВо вложении новая версия техническое заданиеа с учётом ваших комментариев.\n\nBest regards,\nalerts\n\nВложение: invoice.pdf\n\nКод ошибки: ERR_891",
         "links": [],
+        "attachments": [],
         "category": "прочее",
         "scores": {
             "incidents": -6,
@@ -472,7 +509,8 @@
             "invoice"
         ],
         "decision_reason": "Лучший результат у категории 'service_requests' = -4, но нужен минимум 10",
-        "move_status": "пропущено: нет имени файла"
+        "ml_category": "",
+        "ml_status": "ModuleNotFoundError"
     },
     {
         "file_name": "",
@@ -482,6 +520,7 @@
         "date": "",
         "text": "Zoom перестал запускаться после вчерашнего обновления. Появляется ошибка при старте. Переустановка не помогла.\n\nПрикрепил: contract_v2.docx",
         "links": [],
+        "attachments": [],
         "category": "incidents",
         "scores": {
             "incidents": 37.0,
@@ -499,6 +538,7 @@
             "zoom"
         ],
         "decision_reason": "Выбрана категория 'incidents', score=37.0, отрыв от второго места=29.0",
-        "move_status": "пропущено: нет имени файла"
+        "ml_category": "",
+        "ml_status": "ModuleNotFoundError"
     }
 ]
