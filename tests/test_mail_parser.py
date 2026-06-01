@@ -13,12 +13,12 @@ def test_parse_russian_mail(tmp_path):
     file_path = create_mail_file(
         tmp_path,
         """От кого: Юлия Кириллова <yu.kirillova@company.ru>
-        Кому: it-support@company.ru
-        Дата: 18.05.2025 08:40
-        Тема: Правки к инструкцию
+Кому: it-support@company.ru
+Дата: 18.05.2025 08:40
+Тема: Правки к инструкцию
 
-        Во вложении новая версия инструкции.
-        Вложение: invoice.pdf
+Во вложении новая версия инструкции.
+Вложение: invoice.pdf
         """,
     )
 
@@ -38,9 +38,9 @@ def test_parse_english_mail(tmp_path):
     file_path = create_mail_file(
         tmp_path,
         """Subject: 
-        From: t.andreev@company.ru
+From: t.andreev@company.ru
 
-        Перейдите по ссылке: http://totally-not-spam.ru/prize
+Перейдите по ссылке: http://totally-not-spam.ru/prize
         """,
     )
 
