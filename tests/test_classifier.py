@@ -3,6 +3,7 @@ import json
 import sys
 from pathlib import Path
 from textwrap import dedent
+import pytest
 
 ROOT_DIR = Path(__file__).resolve().parents[1]
 CLASSIFIER_DIR = ROOT_DIR / "classifier"
@@ -191,3 +192,10 @@ def test_json_uploader_accepts_utf8_bom(tmp_path):
 
     assert len(emails) == 1
     assert emails[0].file_name == "mail.txt"
+
+def test_json_uploader_rejects_invalid_json(tmp_path):
+    json_path = tmp_path / "broken.json"
+    json_path.write_text("{not valid json", encoding="utf-8")
+
+    with pytest.raises(json.JSONDecodeError):
+        json_uploader(json_path)
