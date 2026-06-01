@@ -51,6 +51,21 @@ python app/app.py mails sorted/all_mails.json
 python classifier/main.py sorted/all_mails.json mails sorted sorted/result.json
 ```
 
+## Визуализация результата
+
+```bash
+python result_viewer.py sorted/result.json
+```
+
+Или через bash-скрипт:
+
+```bash
+./run_viewer.sh sorted/result.json
+```
+
+Если путь не указать, откроется `classifier/result.json`.
+В окне можно посмотреть количество писем по категориям, таблицу писем и детали выбранного обращения.
+
 ## Проверка
 
 ```bash

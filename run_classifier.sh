@@ -46,3 +46,4 @@ echo "Папка результата: $OUTPUT_FOLDER" | tee -a "$LOG_FILE"
 
 echo "Готово: $(date)" | tee -a "$LOG_FILE"
 echo "Лог сохранён: $LOG_FILE"
+echo "Визуализация: ./run_viewer.sh $RESULT_FILE"
