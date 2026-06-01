@@ -52,3 +52,17 @@ From: t.andreev@company.ru
     assert result["links"] == ["http://totally-not-spam.ru/prize"]
     assert result["attachments"] == []
 
+
+def test_parse_empty_mail(tmp_path):
+    file_path = create_mail_file(tmp_path, "")
+
+    parser = MailParser(str(file_path))
+    result = parser.convert_to_json()
+
+    assert result["subject"] == ""
+    assert result["from"] == ""
+    assert result["to"] == ""
+    assert result["date"] == ""
+    assert result["text"] == ""
+    assert result["links"] == []
+    assert result["attachments"] == []
