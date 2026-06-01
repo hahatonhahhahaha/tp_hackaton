@@ -9,15 +9,10 @@ class MailParser:
 
     def convert_to_json(self) -> dict:
         headers_text, body = self._split_headers_and_body()
-        headers = self._parse_headers(headers_text)
-        return {
-            "subject": headers.get("subject", ""),
-            "from": headers.get("from", ""),
-            "to": headers.get("to", ""),
-            "date": headers.get("date", ""),
-            "text": body.strip(),
-            "links": self._find_links(body),
-        }
+        result = self._parse_headers(headers_text)
+        result["text"] = body.strip()
+        result["links"] = self._find_links(body)
+        return result
 
     def _split_headers_and_body(self) -> tuple[str, str]:
         parts = self.text.split("\n\n", 1)
