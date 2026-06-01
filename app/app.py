@@ -39,8 +39,8 @@ class MailConsoleApp:
             mail_json = parser.convert_to_json()
             mail_json["file_name"] = mail_file.name
             return mail_json
-        except:
-            print(f"Ошибка: не получилось обработать файл {mail_file}")
+        except Exception as e:
+            print(f'Ошибка: не получилось прочитать файл. Детали: {e}')
             return None
         
 
