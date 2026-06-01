@@ -9,15 +9,11 @@ class MailParser:
 
     def convert_to_json(self) -> dict:
         headers_text, body = self._split_headers_and_body()
-        headers = self._parse_headers(headers_text)
-        return {
-            "subject": headers.get("subject", ""),
-            "from": headers.get("from", ""),
-            "to": headers.get("to", ""),
-            "date": headers.get("date", ""),
-            "text": body.strip(),
-            "links": self._find_links(body),
-        }
+        result = self._parse_headers(headers_text)
+        result["text"] = body.strip()
+        result["links"] = self._find_links(body)
+        result["attachments"] = self._find_attachments(body)
+        return result
 
     def _split_headers_and_body(self) -> tuple[str, str]:
         parts = self.text.split("\n\n", 1)
@@ -38,11 +34,17 @@ class MailParser:
             "дата": "date",
         }
         for line in headers_text.splitlines():
+            if ":" not in line:
+                continue
             header, content = line.split(":", 1)
+            header = header.strip().lower()
             if header in names:
-                result[names.get(header.lower(), "")] = content
+                result[names.get(header)] = content
         return result
 
     def _find_links(self, body: str) -> list[str]:
         return re.findall(r"https?://\S+", body)
+    
+    def _find_attachments(self, body: str) -> list[str]:
+        return re.findall(r"\b[\w.-]+\.(?:pdf|docx|doc|xlsx|xls|txt|zip|rar|png|jpg|jpeg)\b", body, flags=re.IGNORECASE)
 
