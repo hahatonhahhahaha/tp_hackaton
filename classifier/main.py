@@ -4,7 +4,7 @@ import sys
 from pathlib import Path
 
 from json_uploader import json_uploader
-from score import load_weight, classify_emails
+from score import classify_emails, load_weight
 
 
 def make_unique_path(file_path: Path) -> Path:
@@ -29,31 +29,24 @@ def move_email_files(
     output_folder: Path,
 ) -> None:
     if not input_folder.exists():
-        print(f"Папка не найдена: {input_folder}")
-        return
+        raise FileNotFoundError(f"Папка не найдена: {input_folder}")
 
     if not input_folder.is_dir():
-        print(f"Это не папка: {input_folder}")
-        return
+        raise NotADirectoryError(f"Это не папка: {input_folder}")
 
     output_folder.mkdir(parents=True, exist_ok=True)
-
-    moved_count = 0
-    skipped_count = 0
 
     for result in results:
         file_name = str(result.get("file_name") or "").strip()
 
         if not file_name:
             result["move_status"] = "пропущено: нет имени файла"
-            skipped_count += 1
             continue
 
         mail_file = input_folder / Path(file_name).name
 
         if not mail_file.exists():
             result["move_status"] = "пропущено: файл не найден"
-            skipped_count += 1
             continue
 
         category_folder = output_folder / result["category"]
@@ -64,59 +57,87 @@ def move_email_files(
 
         result["move_status"] = "перемещено"
         result["moved_to"] = str(new_file)
-        moved_count += 1
-
-    print(f"Перемещено файлов: {moved_count}")
-    print(f"Пропущено файлов: {skipped_count}")
 
 
-def main() -> None:
+def save_results(results: list[dict], result_path: Path) -> None:
+    result_path.parent.mkdir(parents=True, exist_ok=True)
+    result_path.write_text(
+        json.dumps(results, ensure_ascii=False, indent=4),
+        encoding="utf-8",
+    )
+
+
+def resolve_path(path: str, base_dir: Path) -> Path:
+    result = Path(path)
+    if result.is_absolute():
+        return result
+    if result.exists():
+        return result
+    return base_dir / result
+
+
+def run_classifier(
+    json_path: Path,
+    input_folder: Path | None,
+    output_folder: Path | None,
+    result_path: Path,
+) -> list[dict]:
     base_dir = Path(__file__).parent
     csv_path = base_dir / "config.csv"
-    result_path = base_dir / "result.json"
-
-    json_path = base_dir / "test.json"
-
-    if len(sys.argv) > 1:
-        json_path = Path(sys.argv[1])
-
-        if not json_path.is_absolute() and not json_path.exists():
-            json_path = base_dir / json_path
-
     emails = json_uploader(json_path)
     weight = load_weight(csv_path)
-
     results = classify_emails(emails, weight)
 
-    if len(sys.argv) > 3:
-        input_folder = Path(sys.argv[2])
-        output_folder = Path(sys.argv[3])
+    if input_folder is not None and output_folder is not None:
+        move_email_files(results, input_folder, output_folder)
 
-        if not input_folder.is_absolute():
-            input_folder = Path.cwd() / input_folder
+    save_results(results, result_path)
+    return results
 
-        if not output_folder.is_absolute():
-            output_folder = Path.cwd() / output_folder
 
-        move_email_files(
-            results=results,
-            input_folder=input_folder,
-            output_folder=output_folder,
+def main() -> int:
+    base_dir = Path(__file__).parent
+
+    if len(sys.argv) not in (1, 2, 4, 5):
+        print(
+            "Использование: python classifier/main.py "
+            "json_path input_folder output_folder result_json"
         )
-    elif len(sys.argv) == 3:
-        print("Для перемещения нужно указать входную и выходную папку")
+        return 1
 
-    with result_path.open("w", encoding="utf-8") as result_file:
-        json.dump(
-            results,
-            result_file,
-            ensure_ascii=False,
-            indent=4,
-        )
+    json_path = base_dir / "test.json"
+    result_path = base_dir / "result.json"
+    input_folder = None
+    output_folder = None
+
+    if len(sys.argv) >= 2:
+        json_path = resolve_path(sys.argv[1], base_dir)
+
+    if len(sys.argv) >= 4:
+        input_folder = resolve_path(sys.argv[2], Path.cwd())
+        output_folder = resolve_path(sys.argv[3], Path.cwd())
+        result_path = output_folder / "result.json"
+
+    if len(sys.argv) == 5:
+        result_path = resolve_path(sys.argv[4], Path.cwd())
+
+    results = run_classifier(json_path, input_folder, output_folder, result_path)
+
+    moved_count = sum(
+        1 for result in results if result.get("move_status") == "перемещено"
+    )
+    skipped_count = sum(
+        1
+        for result in results
+        if str(result.get("move_status", "")).startswith("пропущено")
+    )
 
     print(f"Обработано писем: {len(results)}")
-    print(f"Результат сохранён в: {result_path}")
+    print(f"Перемещено файлов: {moved_count}")
+    print(f"Пропущено файлов: {skipped_count}")
+    print(f"Результат сохранён: {result_path}")
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

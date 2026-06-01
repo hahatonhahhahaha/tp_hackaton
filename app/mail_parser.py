@@ -1,5 +1,5 @@
-from pathlib import Path
 import re
+from pathlib import Path
 
 
 class MailParser:
@@ -17,13 +17,15 @@ class MailParser:
             "date": headers.get("date", ""),
             "text": body.strip(),
             "links": self._find_links(body),
+            "attachments": self._find_attachments(body),
         }
 
     def _split_headers_and_body(self) -> tuple[str, str]:
-        parts = self.text.split("\n\n", 1)
+        text = self.text.replace("\r\n", "\n").replace("\r", "\n")
+        parts = text.split("\n\n", 1)
         if len(parts) == 2:
             return (parts[0], parts[1])
-        return (self.text, "")
+        return (text, "")
 
     def _parse_headers(self, headers_text: str) -> dict:
         result = {}
@@ -38,11 +40,21 @@ class MailParser:
             "дата": "date",
         }
         for line in headers_text.splitlines():
+            line = line.strip()
+            if ":" not in line:
+                continue
             header, content = line.split(":", 1)
+            header = header.strip().lower()
             if header in names:
-                result[names.get(header.lower(), "")] = content
+                result[names[header]] = content.strip()
         return result
 
     def _find_links(self, body: str) -> list[str]:
         return re.findall(r"https?://\S+", body)
 
+    def _find_attachments(self, body: str) -> list[str]:
+        return re.findall(
+            r"\b[\w.-]+\.(?:pdf|docx|doc|xlsx|xls|txt|zip|rar|png|jpg|jpeg)\b",
+            body,
+            flags=re.IGNORECASE,
+        )

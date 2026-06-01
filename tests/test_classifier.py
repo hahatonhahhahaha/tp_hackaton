@@ -1,130 +1,193 @@
+import importlib
 import json
 import sys
 from pathlib import Path
+from textwrap import dedent
 
-
-CLASSIFIER_DIR = Path(__file__).resolve().parents[1] / "classifier"
+ROOT_DIR = Path(__file__).resolve().parents[1]
+CLASSIFIER_DIR = ROOT_DIR / "classifier"
 sys.path.insert(0, str(CLASSIFIER_DIR))
 
-from json_uploader import json_uploader  # noqa: E402
-from main import move_email_files  # noqa: E402
-from score import classify_emails, load_weight  # noqa: E402
+MailConsoleApp = importlib.import_module("app.app").MailConsoleApp
+MailParser = importlib.import_module("app.mail_parser").MailParser
+json_uploader = importlib.import_module("json_uploader").json_uploader
+run_classifier = importlib.import_module("main").run_classifier
+score = importlib.import_module("score")
+classify_emails = score.classify_emails
+load_weight = score.load_weight
 
 
-def test_classifier_uses_mail_text_and_moves_files(tmp_path):
-    input_folder = tmp_path / "inbox"
-    output_folder = tmp_path / "sorted"
-    input_folder.mkdir()
+def write_mail(path: Path, text: str) -> None:
+    path.write_text(dedent(text).strip(), encoding="utf-8")
 
-    test_mails = [
-        {
-            "file_name": "mail_0001.txt",
-            "subject": "Обращение 1",
-            "from": "user@company.ru",
-            "to": "it-support@company.ru",
-            "date": "2026-06-01",
-            "text": "После обновления системы пропал доступ к VPN.",
-            "links": [],
-        },
-        {
-            "file_name": "mail_0002.txt",
-            "subject": "Обращение 2",
-            "from": "hr@company.ru",
-            "to": "it-support@company.ru",
-            "date": "2026-06-01",
-            "text": "Прошу выдать доступ к почте для нового сотрудника.",
-            "links": [],
-        },
-        {
-            "file_name": "mail_0003.txt",
-            "subject": "Обращение 3",
-            "from": "spam@example.com",
-            "to": "it-support@company.ru",
-            "date": "2026-06-01",
-            "text": "Подтвердить доступ можно после ввода данных банковской карты.",
-            "links": ["https://example.com/login"],
-        },
-        {
-            "file_name": "mail_0004.txt",
-            "subject": "Обращение 4",
-            "from": "office@company.ru",
-            "to": "it-support@company.ru",
-            "date": "2026-06-01",
-            "text": "Устройство: принтер. Не определяется системой.",
-            "links": [],
-        },
-        {
-            "file_name": "mail_0005.txt",
-            "subject": "Обращение 5",
-            "from": "manager@company.ru",
-            "to": "it-support@company.ru",
-            "date": "2026-06-01",
-            "text": "Коллеги, предлагаю обсудить план встречи завтра.",
-            "links": [],
-        },
-    ]
 
-    for mail in test_mails:
-        mail_file = input_folder / mail["file_name"]
-        mail_file.write_text(mail["text"], encoding="utf-8")
+def test_parser_reads_headers_text_links_and_attachments(tmp_path):
+    mail_path = tmp_path / "mail.txt"
+    write_mail(
+        mail_path,
+        """
+        От кого: Юлия Кириллова <yu.kirillova@company.ru>
+        Кому: it-support@company.ru
+        Дата: 18.05.2025 08:40
+        Тема: Правки к инструкции
+        Строка без двоеточия
 
-    json_path = tmp_path / "all_mails.json"
-    json_path.write_text(
-        json.dumps(test_mails, ensure_ascii=False, indent=4),
-        encoding="utf-8",
+        Во вложении новая версия инструкции.
+        Ссылка: https://company.ru/docs
+        Вложение: invoice.pdf
+        """,
     )
 
-    csv_path = tmp_path / "config.csv"
-    csv_path.write_text(
-        "marker,incidents,service_requests,spam,hardware_faults\n"
-        "после обновления системы,12,-3,-3,-3\n"
-        "пропал доступ к vpn,20,-3,-3,-3\n"
-        "прошу выдать доступ,-3,20,-3,-3\n"
-        "нового сотрудника,-3,14,-3,-3\n"
-        "подтвердить доступ,-3,-3,14,-3\n"
-        "данных банковской карты,-3,-3,20,-3\n"
-        "устройство: принтер,-3,-3,-3,20\n"
-        "не определяется системой,-3,-3,-3,14\n",
+    result = MailParser(str(mail_path)).convert_to_json()
+
+    assert result["from"] == "Юлия Кириллова <yu.kirillova@company.ru>"
+    assert result["to"] == "it-support@company.ru"
+    assert result["date"] == "18.05.2025 08:40"
+    assert result["subject"] == "Правки к инструкции"
+    assert "новая версия инструкции" in result["text"]
+    assert result["links"] == ["https://company.ru/docs"]
+    assert result["attachments"] == ["invoice.pdf"]
+
+
+def test_classifier_handles_main_categories_and_other(tmp_path):
+    json_path = tmp_path / "all_mails.json"
+    json_path.write_text(
+        json.dumps(
+            [
+                {
+                    "file_name": "mail_0001.txt",
+                    "subject": "Падает сервис",
+                    "from": "user@company.ru",
+                    "to": "it-support@company.ru",
+                    "date": "2026-06-01",
+                    "text": "Критический инцидент ошибка 500 работа остановлена.",
+                    "links": [],
+                    "attachments": [],
+                },
+                {
+                    "file_name": "mail_0002.txt",
+                    "subject": "Нужен доступ",
+                    "from": "hr@company.ru",
+                    "to": "it-support@company.ru",
+                    "date": "2026-06-01",
+                    "text": "Прошу выдать доступ к почте для нового сотрудника.",
+                    "links": [],
+                    "attachments": [],
+                },
+                {
+                    "file_name": "mail_0003.txt",
+                    "subject": "Подарок",
+                    "from": "spam@example.com",
+                    "to": "it-support@company.ru",
+                    "date": "2026-06-01",
+                    "text": "Подтвердить доступ после ввода данных банковской карты.",
+                    "links": ["https://example.com/login"],
+                    "attachments": [],
+                },
+                {
+                    "file_name": "mail_0004.txt",
+                    "subject": "Неисправность оборудования",
+                    "from": "office@company.ru",
+                    "to": "it-support@company.ru",
+                    "date": "2026-06-01",
+                    "text": "Устройство: принтер. Не определяется системой.",
+                    "links": [],
+                    "attachments": [],
+                },
+                {
+                    "file_name": "mail_0005.txt",
+                    "subject": "Встреча",
+                    "from": "manager@company.ru",
+                    "to": "it-support@company.ru",
+                    "date": "2026-06-01",
+                    "text": "Коллеги, предлагаю обсудить план встречи завтра.",
+                    "links": [],
+                    "attachments": [],
+                },
+            ],
+            ensure_ascii=False,
+            indent=4,
+        ),
         encoding="utf-8",
     )
 
     emails = json_uploader(json_path)
-    weight = load_weight(csv_path)
+    weight = load_weight(ROOT_DIR / "classifier" / "config.csv")
     results = classify_emails(emails, weight)
+    by_file = {result["file_name"]: result for result in results}
 
-    move_email_files(
-        results=results,
-        input_folder=input_folder,
-        output_folder=output_folder,
+    assert by_file["mail_0001.txt"]["category"] == "incidents"
+    assert by_file["mail_0002.txt"]["category"] == "service_requests"
+    assert by_file["mail_0003.txt"]["category"] == "spam"
+    assert by_file["mail_0004.txt"]["category"] == "hardware_faults"
+    assert by_file["mail_0005.txt"]["category"] == "прочее"
+    assert by_file["mail_0005.txt"]["decision_reason"]
+
+
+def test_full_pipeline_parses_classifies_and_moves_files(tmp_path):
+    input_folder = tmp_path / "inbox"
+    output_folder = tmp_path / "sorted"
+    input_folder.mkdir()
+    output_folder.mkdir()
+
+    write_mail(
+        input_folder / "mail_0001.txt",
+        """
+        From: user@company.ru
+        To: it-support@company.ru
+        Date: 2026-06-01
+        Subject: Падает система
+
+        Критический инцидент ошибка 500 работа остановлена.
+        """,
+    )
+    write_mail(
+        input_folder / "mail_0002.txt",
+        """
+        От кого: hr@company.ru
+        Кому: it-support@company.ru
+        Дата: 2026-06-01
+        Тема: Новый сотрудник
+
+        Прошу выдать доступ к почте для нового сотрудника.
+        """,
+    )
+    write_mail(
+        input_folder / "mail_0003.txt",
+        """
+        Subject: Письмо без категории
+
+        Коллеги, предлагаю обсудить план встречи завтра.
+        """,
     )
 
-    results_by_file = {}
+    json_path = output_folder / "all_mails.json"
+    result_path = output_folder / "result.json"
 
-    for result in results:
-        results_by_file[result["file_name"]] = result
+    assert MailConsoleApp(str(input_folder), str(json_path)).run() == 0
 
-    expected_categories = {
-        "mail_0001.txt": "incidents",
-        "mail_0002.txt": "service_requests",
-        "mail_0003.txt": "spam",
-        "mail_0004.txt": "hardware_faults",
-        "mail_0005.txt": "прочее",
-    }
+    results = run_classifier(json_path, input_folder, output_folder, result_path)
+    by_file = {result["file_name"]: result for result in results}
 
-    assert len(results) == 5
+    assert by_file["mail_0001.txt"]["category"] == "incidents"
+    assert by_file["mail_0002.txt"]["category"] == "service_requests"
+    assert by_file["mail_0003.txt"]["category"] == "прочее"
+    assert (output_folder / "incidents" / "mail_0001.txt").exists()
+    assert (output_folder / "service_requests" / "mail_0002.txt").exists()
+    assert (output_folder / "прочее" / "mail_0003.txt").exists()
+    assert not (input_folder / "mail_0001.txt").exists()
+    assert result_path.exists()
 
-    for file_name, category in expected_categories.items():
-        result = results_by_file[file_name]
-        moved_file = output_folder / category / file_name
 
-        assert result["category"] == category
-        assert result["move_status"] == "перемещено"
-        assert Path(result["moved_to"]) == moved_file
-        assert moved_file.exists()
-        assert not (input_folder / file_name).exists()
+def test_json_uploader_accepts_utf8_bom(tmp_path):
+    json_path = tmp_path / "mail.json"
+    data = [{"file_name": "mail.txt", "subject": "Тест", "text": "ошибка 500"}]
+    json_path.write_text(
+        json.dumps(data, ensure_ascii=False),
+        encoding="utf-8-sig",
+    )
 
-    assert "пропал доступ к vpn" in results_by_file["mail_0001.txt"]["matched_text_markers"]
-    assert "прошу выдать доступ" in results_by_file["mail_0002.txt"]["matched_text_markers"]
-    assert "данных банковской карты" in results_by_file["mail_0003.txt"]["matched_text_markers"]
-    assert "устройство: принтер" in results_by_file["mail_0004.txt"]["matched_text_markers"]
-    assert results_by_file["mail_0005.txt"]["matched_text_markers"] == []
+    emails = json_uploader(json_path)
+
+    assert len(emails) == 1
+    assert emails[0].file_name == "mail.txt"

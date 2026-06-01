@@ -1,8 +1,8 @@
 import csv
 from pathlib import Path
 
-from parsed_email import ParsedEmail
 from mark_matcher import find_markers, normalize_text
+from parsed_email import ParsedEmail
 
 
 CATEGORIES = [
@@ -27,11 +27,13 @@ def load_weight(csv_path: str | Path) -> dict[str, dict[str, int]]:
     csv_path = Path(csv_path)
     weight: dict[str, dict[str, int]] = {}
 
-    with csv_path.open("r", encoding="utf-8") as csv_file:
+    with csv_path.open("r", encoding="utf-8-sig") as csv_file:
         reader = csv.DictReader(csv_file)
-    
+
         for row in reader:
             marker = normalize_text(row["marker"])
+            if not marker:
+                continue
             weight[marker] = {}
 
             for category in CATEGORIES:
@@ -53,8 +55,8 @@ def add_marker_score(
     scores: dict[str, float],
     marker: str,
     multiplier: float,
-    weight: dict[str, dict[str, int]]) -> None:
-
+    weight: dict[str, dict[str, int]],
+) -> None:
     marker_weight = weight[marker]
 
     for category in CATEGORIES:
@@ -65,8 +67,8 @@ def add_marker_score(
 def calculate_scores(
     subject_markers: list[str],
     text_markers: list[str],
-    weight: dict[str, dict[str, int]]) -> dict[str, float]:
-    
+    weight: dict[str, dict[str, int]],
+) -> dict[str, float]:
     scores = make_empty_scores()
 
     for marker in text_markers:
@@ -144,6 +146,7 @@ def classify_email(
         "date": email.date,
         "text": email.text,
         "links": email.links,
+        "attachments": email.attachments,
         "category": category,
         "scores": scores,
         "matched_subject_markers": subject_markers,
