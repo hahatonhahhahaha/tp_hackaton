@@ -33,7 +33,6 @@ class MailClassifierApp:
                 mail_json = parser.convert_to_json()
                 mail_json["file_name"] = mail_file.name
                 
-                # Классификация с помощью ML
                 text_for_classification = mail_json.get("text", "")
                 category = predict_category(text_for_classification)
                 mail_json["category"] = category
