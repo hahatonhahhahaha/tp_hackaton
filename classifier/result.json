@@ -1,15 +1,587 @@
 [
     {
-        "file_name": "",
-        "subject": "браузер Chrome зависает при открытии",
-        "sender": "s.volkov@partner.ru",
+        "file_name": "mail_0022.txt",
+        "subject": "",
+        "sender": "",
         "recipient": "",
         "date": "",
-        "text": "Здравствуйте!\n\nПосле обновления системы браузер Chrome не открывает файлы нужного формата. Раньше всё работало.\n\nСпасибо.",
+        "text": "Финальная версия: договор Здравствуйте!\n\nПрошу подтвердить, что договор получен и принят в работу.\n\nBest regards,\nKate Brown\n\nФайл: error_log.txt",
         "links": [],
+        "attachments": [],
+        "category": "service_requests",
+        "scores": {
+            "incidents": 0,
+            "service_requests": 29,
+            "spam": 0,
+            "hardware_faults": 0
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "прошу подтвердить",
+            "финальная версия",
+            "договор"
+        ],
+        "decision_reason": "Выбрана категория 'service_requests', score=29, отрыв от второго места=29",
+        "expected_category": "service_requests",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0073.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "Критический инцидент — GitLab недоступен Уважаемые коллеги,\n\nОбращаемся повторно — после первого тикета проблема не устранена. GitLab по-прежнему недоступен. Нужен статус.\n\nP.S. Это уже второй запрос по данной теме.\n\nФайл: error_log.txt",
+        "links": [],
+        "attachments": [],
         "category": "incidents",
         "scores": {
-            "incidents": 32,
+            "incidents": 39,
+            "service_requests": 5,
+            "spam": 0,
+            "hardware_faults": 0
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "проблема не устранена",
+            "критический инцидент",
+            "после первого тикета",
+            "недоступен",
+            "gitlab",
+            "запрос"
+        ],
+        "decision_reason": "Выбрана категория 'incidents', score=39, отрыв от второго места=34",
+        "expected_category": "incidents",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0064.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "От кого: no-reply <no-reply@monitoring.internal>\nКому: it-support@company.ru\nДата: 26.01.2025 15:39\nТема: Срочно подтвердите личность\n\nЗдравствуйте!\n\nТОЛЬКО СЕГОДНЯ! Эксклюзивная акция для сотрудников компании. Скидка 90% на все товары.\n\nСпасибо.\n\nВо вложении: screenshot.png",
+        "links": [],
+        "attachments": [],
+        "category": "spam",
+        "scores": {
+            "incidents": 5,
+            "service_requests": 0,
+            "spam": 43,
+            "hardware_faults": 0
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "подтвердите личность",
+            "эксклюзивная акция",
+            "только сегодня",
+            "monitoring",
+            "скидка 90%"
+        ],
+        "decision_reason": "Выбрана категория 'spam', score=43, отрыв от второго места=38",
+        "expected_category": "spam",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0075.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "От кого: Виктор Громов <v.gromov@partner.ru>\nКому: it-support@company.ru\nДата: 25.02.2025 14:26\nТема: Больничный лист\n\nДобрый день.\n\nПрошу подготовить рабочее место и доступы для нового сотрудника Михаил Сидоров. Выход на работу — в следующий понедельник. Отдел: Юристы.\n\nOtpravleno s iPhone\n\nПрикрепил: contract_v2.docx\n\nID заявки: #20693",
+        "links": [],
+        "attachments": [],
+        "category": "service_requests",
+        "scores": {
+            "incidents": 0,
+            "service_requests": 38,
+            "spam": 0,
+            "hardware_faults": 0
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "доступы для нового сотрудника",
+            "подготовить рабочее место",
+            "больничный лист"
+        ],
+        "decision_reason": "Выбрана категория 'service_requests', score=38, отрыв от второго места=38",
+        "expected_category": "service_requests",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0005.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "Инструкция на согласование Уважаемые коллеги,\n\nНаправляем инструкция на согласование. Просим проверить условия и вернуть с правками или подписью до пятницы.\n\nOtpravleno s iPhone\n\nID заявки: #72296",
+        "links": [],
+        "attachments": [],
+        "category": "service_requests",
+        "scores": {
+            "incidents": 0,
+            "service_requests": 35,
+            "spam": 0,
+            "hardware_faults": 0
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "инструкция на согласование",
+            "направляем инструкция",
+            "согласование"
+        ],
+        "decision_reason": "Выбрана категория 'service_requests', score=35, отрыв от второго места=35",
+        "expected_category": "service_requests",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0019.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "От кого: Ольга Белова <o.belova@client.biz>\nКому: it-support@company.ru\nДата: 21.02.2025 15:22\nТема: Правки к техническое заданиеу\n\nДобрый день.\n\nВо вложении новая версия техническое заданиеа с учётом ваших комментариев.\n\nBest regards,\nalerts\n\nВложение: invoice.pdf\n\nКод ошибки: ERR_891",
+        "links": [],
+        "attachments": [],
+        "category": "service_requests",
+        "scores": {
+            "incidents": 0,
+            "service_requests": 16,
+            "spam": 0,
+            "hardware_faults": 0
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "новая версия",
+            "вложение",
+            "invoice"
+        ],
+        "decision_reason": "Выбрана категория 'service_requests', score=16, отрыв от второго места=16",
+        "expected_category": "service_requests",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0011.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "Заявка на отпуск Прошу подготовить рабочее место и доступы для нового сотрудника noreply. Выход на работу — в следующий понедельник. Отдел: Логистика.\n\nP.S. Это уже второй запрос по данной теме.\n\nВложение: invoice.pdf\n\nID заявки: #86569",
+        "links": [],
+        "attachments": [],
+        "category": "service_requests",
+        "scores": {
+            "incidents": 0,
+            "service_requests": 46,
+            "spam": 0,
+            "hardware_faults": 0
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "доступы для нового сотрудника",
+            "подготовить рабочее место",
+            "вложение",
+            "invoice",
+            "отпуск",
+            "заявка",
+            "запрос"
+        ],
+        "decision_reason": "Выбрана категория 'service_requests', score=46, отрыв от второго места=46",
+        "expected_category": "service_requests",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0029.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "Приглашение на демо Коллеги, привет!\n\nНужно обсудить статус задач до конца недели. Предлагаю созвон на 30 минут.\n\nС уважением,\nЛюдмила Захарова\n\nФайл: error_log.txt",
+        "links": [],
+        "attachments": [],
+        "category": "service_requests",
+        "scores": {
+            "incidents": 0,
+            "service_requests": 48,
+            "spam": 0,
+            "hardware_faults": 0
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "приглашение на демо",
+            "предлагаю созвон",
+            "нужно обсудить",
+            "статус задач"
+        ],
+        "decision_reason": "Выбрана категория 'service_requests', score=48, отрыв от второго места=48",
+        "expected_category": "service_requests",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0087.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "Требуется срочная верификация аккаунта Hi,\n\nВНИМАНИЕ! На ваш аккаунт зафиксирован подозрительный вход из другой страны.\nНемедленно подтвердите личность, ответив на это письмо с указанием логина и пароля.\n\nIT Security Team\n\nOtpravleno s iPhone\n\nВо вложении: screenshot.png",
+        "links": [],
+        "attachments": [],
+        "category": "spam",
+        "scores": {
+            "incidents": 9,
+            "service_requests": 10,
+            "spam": 56,
+            "hardware_faults": 0
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "срочная верификация аккаунта",
+            "ответив на это письмо",
+            "подтвердите личность",
+            "подозрительный вход",
+            "немедленно",
+            "аккаунт"
+        ],
+        "decision_reason": "Выбрана категория 'spam', score=56, отрыв от второго места=46",
+        "expected_category": "spam",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0041.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "Вы выиграли iPhone 15! Здравствуйте!\n\nДорогой пользователь! Ваш аккаунт будет заблокирован через 24 часа. Для подтверждения личности немедленно введите логин и пароль: http://secure-login-verify.net\n\nID заявки: #64548",
+        "links": [],
+        "attachments": [],
+        "category": "spam",
+        "scores": {
+            "incidents": 5,
+            "service_requests": 2,
+            "spam": 70,
+            "hardware_faults": 0
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "аккаунт будет заблокирован",
+            "введите логин и пароль",
+            "secure-login-verify",
+            "вы выиграли",
+            "немедленно",
+            "iphone 15"
+        ],
+        "decision_reason": "Выбрана категория 'spam', score=70, отрыв от второго места=65",
+        "expected_category": "spam",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0023.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "Не могу войти в почта — у всех отдела Добрый день.\n\nПосле утреннего обновления почта перестал открываться у всего отдела Аналитика. Ошибка появляется сразу при входе. Работа полностью остановлена, нужна срочная помощь.\n\nBest regards,\nКирилл Морозов\n\nПрикрепил: contract_v2.docx",
+        "links": [],
+        "attachments": [],
+        "category": "incidents",
+        "scores": {
+            "incidents": 61,
+            "service_requests": 2,
+            "spam": 0,
+            "hardware_faults": 0
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "работа полностью остановлена",
+            "после утреннего обновления",
+            "ошибка появляется сразу",
+            "перестал открываться",
+            "не могу войти в",
+            "почта"
+        ],
+        "decision_reason": "Выбрана категория 'incidents', score=61, отрыв от второго места=59",
+        "expected_category": "incidents",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0028.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "От кого: Наталья Лебедева <n.lebedeva@corp.local>\nКому: it-support@company.ru\nДата: 19.05.2025 15:26\nТема: Ошибка в Excel после обновления\n\nHi,\n\nНе могу установить Excel — установщик зависает на 80% и выдаёт ошибку. Права администратора есть. Что делать?\n\nПрикрепил: contract_v2.docx\n\nКод ошибки: ERR_460",
+        "links": [],
+        "attachments": [],
+        "category": "incidents",
+        "scores": {
+            "incidents": 17,
+            "service_requests": 1,
+            "spam": 0,
+            "hardware_faults": 1
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "не могу установить",
+            "ошибка"
+        ],
+        "decision_reason": "Выбрана категория 'incidents', score=17, отрыв от второго места=16",
+        "expected_category": "incidents",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0034.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "От кого: Юлия Кириллова <yu.kirillova@company.ru>\nКому: it-support@company.ru\nДата: 31.01.2025 17:50\nТема: Закрывающие документы за июнь\n\nЗдравствуйте!\n\nНаправляем счёт и акт за оказанные услуги за июнь. Просьба передать в бухгалтерию для оплаты до конца недели.\n\nВо вложении: screenshot.png",
+        "links": [],
+        "attachments": [],
+        "category": "service_requests",
+        "scores": {
+            "incidents": 0,
+            "service_requests": 25,
+            "spam": 0,
+            "hardware_faults": 0
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "закрывающие документы",
+            "направляем счет и акт"
+        ],
+        "decision_reason": "Выбрана категория 'service_requests', score=25, отрыв от второго места=25",
+        "expected_category": "service_requests",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0037.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "Счёт на оплату №8141 Hi,\n\nПросим подтвердить получение счёта №8141. Оплата по договору должна пройти до 26.1.2025.\n\nСпасибо.\n\nВложение: invoice.pdf",
+        "links": [],
+        "attachments": [],
+        "category": "service_requests",
+        "scores": {
+            "incidents": 0,
+            "service_requests": 46,
+            "spam": 0,
+            "hardware_faults": 0
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "оплата по договору",
+            "получение счета",
+            "счет на оплату",
+            "вложение",
+            "invoice"
+        ],
+        "decision_reason": "Выбрана категория 'service_requests', score=46, отрыв от второго места=46",
+        "expected_category": "service_requests",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0046.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "Не запускается антивирус Hi,\n\nантивирус перестал запускаться после вчерашнего обновления. Появляется ошибка при старте. Переустановка не помогла.\n\nBest regards,\nВиктор Громов\n\nВложение: invoice.pdf",
+        "links": [],
+        "attachments": [],
+        "category": "incidents",
+        "scores": {
+            "incidents": 29,
+            "service_requests": 10,
+            "spam": 0,
+            "hardware_faults": 1
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "переустановка не помогла",
+            "перестал запускаться",
+            "антивирус",
+            "вложение",
+            "invoice",
+            "ошибка"
+        ],
+        "decision_reason": "Выбрана категория 'incidents', score=29, отрыв от второго места=19",
+        "expected_category": "incidents",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0030.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "От кого: Юлия Кириллова <yu.kirillova@company.ru>\nКому: it-support@company.ru\nДата: 17.05.2025 08:58\nТема: Запрос доступа к почта\n\nДобрый день.\n\nПрошу выдать доступ сотруднику Артём Гусев (Безопасность) к системе почта. Уровень доступа — чтение и редактирование. Руководитель согласовал.\n\nOtpravleno s iPhone\n\nВо вложении: screenshot.png",
+        "links": [],
+        "attachments": [],
+        "category": "service_requests",
+        "scores": {
+            "incidents": 0,
+            "service_requests": 55,
+            "spam": 0,
+            "hardware_faults": 0
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "руководитель согласовал",
+            "запрос доступа к почта",
+            "прошу выдать доступ",
+            "уровень доступа",
+            "почта"
+        ],
+        "decision_reason": "Выбрана категория 'service_requests', score=55, отрыв от второго места=55",
+        "expected_category": "service_requests",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0026.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "От кого: Михаил Сидоров <m.sidorov@company.ru>\nКому: it-support@company.ru\nДата: 20.06.2025 16:35\nТема: Re:\n\nHi,\n\nНе работает. Уже второй день.\n\nЕсли вопрос не к вам — перенаправьте, пожалуйста.\n\nВо вложении: screenshot.png",
+        "links": [],
+        "attachments": [],
+        "category": "incidents",
+        "scores": {
+            "incidents": 12,
+            "service_requests": 0,
+            "spam": 0,
+            "hardware_faults": 0
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "не работает. уже второй день"
+        ],
+        "decision_reason": "Выбрана категория 'incidents', score=12, отрыв от второго места=12",
+        "expected_category": "incidents",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0050.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "Приглашение на демо Добрый день.\n\nНужно обсудить статус задач до конца недели. Предлагаю созвон на 30 минут.\n\nBest regards,\nЛюдмила Захарова\n\nПрикрепил: contract_v2.docx\n\nID заявки: #34983",
+        "links": [],
+        "attachments": [],
+        "category": "service_requests",
+        "scores": {
+            "incidents": 0,
+            "service_requests": 48,
+            "spam": 0,
+            "hardware_faults": 0
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "приглашение на демо",
+            "предлагаю созвон",
+            "нужно обсудить",
+            "статус задач"
+        ],
+        "decision_reason": "Выбрана категория 'service_requests', score=48, отрыв от второго места=48",
+        "expected_category": "service_requests",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0053.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "От кого: no-reply <no-reply@monitoring.internal>\nКому: it-support@company.ru\nДата: 08.02.2025 15:02\nТема: Обновления корпоративного портала\n\nУважаемые коллеги,\n\nВ этом выпуске: итоги квартала, новые сотрудники, изменения в политике ИБ. Полная версия дайджеста доступна на корпоративном портале.\n\nBest regards,\nЕлена Новикова",
+        "links": [],
+        "attachments": [],
+        "category": "service_requests",
+        "scores": {
+            "incidents": 5,
+            "service_requests": 22,
+            "spam": 0,
+            "hardware_faults": 0
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "итоги квартала",
+            "политике иб",
+            "monitoring"
+        ],
+        "decision_reason": "Выбрана категория 'service_requests', score=22, отрыв от второго места=17",
+        "expected_category": "service_requests",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0024.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "Нет доступа к GitLab после перевода Здравствуйте!\n\nПрошу выдать доступ сотруднику Виктор Громов (Безопасность) к системе GitLab. Уровень доступа — чтение и редактирование. Руководитель согласовал.\n\nСпасибо.\n\nID заявки: #16057",
+        "links": [],
+        "attachments": [],
+        "category": "service_requests",
+        "scores": {
+            "incidents": 13,
+            "service_requests": 53,
+            "spam": 0,
+            "hardware_faults": 0
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "руководитель согласовал",
+            "прошу выдать доступ",
+            "уровень доступа",
+            "после перевода",
+            "нет доступа",
+            "gitlab"
+        ],
+        "decision_reason": "Выбрана категория 'service_requests', score=53, отрыв от второго места=40",
+        "expected_category": "service_requests",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0107.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "Запрос от внешнего пользователя Добрый день.\n\nСм. вложение.\n\nС уважением.",
+        "links": [],
+        "attachments": [],
+        "category": "прочее",
+        "scores": {
+            "incidents": 0,
+            "service_requests": 5,
+            "spam": 0,
+            "hardware_faults": 0
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "см. вложение",
+            "запрос"
+        ],
+        "decision_reason": "Лучший результат у категории 'service_requests' = 5, но нужен минимум 10",
+        "expected_category": "прочее",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0045.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "Коллеги, привет!\n\nПосле обновления системы Outlook не открывает файлы нужного формата. Раньше всё работало.\n\nПрикрепил: contract_v2.docx\n\nID заявки: #66626",
+        "links": [],
+        "attachments": [],
+        "category": "incidents",
+        "scores": {
+            "incidents": 24,
             "service_requests": 0,
             "spam": 0,
             "hardware_faults": 0
@@ -19,451 +591,826 @@
             "не открывает файлы нужного формата",
             "после обновления системы"
         ],
-        "decision_reason": "Выбрана категория 'incidents', score=32, отрыв от второго места=32",
-        "move_status": "пропущено: нет имени файла"
+        "decision_reason": "Выбрана категория 'incidents', score=24, отрыв от второго места=24",
+        "expected_category": "incidents",
+        "is_correct": true
     },
     {
-        "file_name": "",
-        "subject": "URGENT: Запрос от внешнего пользователя",
-        "sender": "John Smith <john.smith@globaltech.com>",
-        "recipient": "it-support@company.ru",
-        "date": "03.04.2025 11:08",
-        "text": "Добрый день.\n\nКлиент обращается повторно — заявка висит без ответа уже 3 дня. Прошу срочно разобраться.\n\nP.S. Это уже второй запрос по данной теме.",
-        "links": [],
-        "category": "incidents",
-        "scores": {
-            "incidents": 16.0,
-            "service_requests": 3.5,
-            "spam": 0.0,
-            "hardware_faults": 0.0
-        },
-        "matched_subject_markers": [
-            "запрос"
-        ],
-        "matched_text_markers": [
-            "заявка висит без ответа",
-            "запрос"
-        ],
-        "decision_reason": "Выбрана категория 'incidents', score=16.0, отрыв от второго места=12.5",
-        "move_status": "пропущено: нет имени файла"
-    },
-    {
-        "file_name": "",
-        "subject": "[IT] Корпоративный дайджест — выпуск #11",
-        "sender": "Виктор Громов <v.gromov@partner.ru>",
-        "recipient": "it-support@company.ru",
-        "date": "2025-03-06 16:55",
-        "text": "Hi,\n\nНапоминаем: в пятницу плановые технические работы с 22:00 до 02:00. Ряд систем будет недоступен.\n\nС уважением,\nСветлана Попова",
-        "links": [],
-        "category": "прочее",
-        "scores": {
-            "incidents": -13.0,
-            "service_requests": -19.0,
-            "spam": -21.0,
-            "hardware_faults": -21.0
-        },
-        "matched_subject_markers": [
-            "корпоративный дайджест"
-        ],
-        "matched_text_markers": [
-            "плановые технические работы",
-            "недоступен"
-        ],
-        "decision_reason": "Лучший результат у категории 'incidents' = -13.0, но нужен минимум 10",
-        "move_status": "пропущено: нет имени файла"
-    },
-    {
-        "file_name": "",
-        "subject": "Падает система согласования, работа остановлена",
-        "sender": "Виктор Громов <v.gromov@partner.ru>",
-        "recipient": "it-support@company.ru",
-        "date": "28.01.2025 18:19",
-        "text": "Добрый день.\n\nУ нас критичный инцидент: система согласования возвращает ошибку 500 уже 40 минут. Затронуты примерно 15 сотрудников. Просим срочно проверить.\n\nЕсли вопрос не к вам — перенаправьте, пожалуйста.\n\nПрикрепил: contract_v2.docx",
-        "links": [],
-        "category": "incidents",
-        "scores": {
-            "incidents": 71.0,
-            "service_requests": 0.0,
-            "spam": 0.0,
-            "hardware_faults": 0.0
-        },
-        "matched_subject_markers": [
-            "работа остановлена"
-        ],
-        "matched_text_markers": [
-            "затронуты примерно",
-            "инцидент"
-        ],
-        "decision_reason": "Выбрана категория 'incidents', score=71.0, отрыв от второго места=71.0",
-        "move_status": "пропущено: нет имени файла"
-    },
-    {
-        "file_name": "",
-        "subject": "Инструкция на согласование",
-        "sender": "k.morozov@company.ru",
+        "file_name": "mail_0056.txt",
+        "subject": "",
+        "sender": "",
         "recipient": "",
         "date": "",
-        "text": "Уважаемые коллеги,\n\nНаправляем инструкция на согласование. Просим проверить условия и вернуть с правками или подписью до пятницы.\n\nOtpravleno s iPhone\n\nID заявки: #72296",
+        "text": "От кого: Kate Brown <k.brown@extern.org>\nКому: it-support@company.ru\nДата: 25.05.2025 18:50\nТема: Уточнение по оплате договора\n\nДобрый день.\n\nВысылаем закрывающие документы. Если файлы не прикрепились — сообщите.\n\nСпасибо.\n\nВо вложении: screenshot.png",
         "links": [],
-        "category": "прочее",
+        "attachments": [],
+        "category": "service_requests",
         "scores": {
-            "incidents": -21.0,
-            "service_requests": -21.0,
-            "spam": -21.0,
-            "hardware_faults": -21.0
+            "incidents": 0,
+            "service_requests": 12,
+            "spam": 0,
+            "hardware_faults": 0
         },
-        "matched_subject_markers": [
-            "инструкция на согласование"
-        ],
+        "matched_subject_markers": [],
         "matched_text_markers": [
-            "инструкция на согласование"
-        ],
-        "decision_reason": "Лучший результат у категории 'incidents' = -21.0, но нужен минимум 10",
-        "move_status": "пропущено: нет имени файла"
-    },
-    {
-        "file_name": "",
-        "subject": "Закрывающие документы за декабрь",
-        "sender": "Kate Brown <k.brown@extern.org>",
-        "recipient": "it-support@company.ru",
-        "date": "2025-02-24 16:48",
-        "text": "Уточните статус оплаты по акту от 10.7.2025. В нашей системе оплата ещё не отражена.\n\nСпасибо.\n\nID заявки: #12757",
-        "links": [],
-        "category": "прочее",
-        "scores": {
-            "incidents": -10.5,
-            "service_requests": -10.5,
-            "spam": -10.5,
-            "hardware_faults": -10.5
-        },
-        "matched_subject_markers": [
             "закрывающие документы"
         ],
-        "matched_text_markers": [
-            "оплата"
-        ],
-        "decision_reason": "Лучший результат у категории 'incidents' = -10.5, но нужен минимум 10",
-        "move_status": "пропущено: нет имени файла"
+        "decision_reason": "Выбрана категория 'service_requests', score=12, отрыв от второго места=12",
+        "expected_category": "service_requests",
+        "is_correct": true
     },
     {
-        "file_name": "",
-        "subject": "Не могу войти в Confluence — у всех отдела",
-        "sender": "noreply@jira.internal",
+        "file_name": "mail_0043.txt",
+        "subject": "",
+        "sender": "",
         "recipient": "",
         "date": "",
-        "text": "Добрый день.\n\nСервис Confluence не отвечает с 9:15. Пробовали перезайти — не помогает. Несколько коллег из IT подтвердили ту же проблему.\n\nС уважением,\nАлексей Козлов\n\nФайл: error_log.txt",
+        "text": "От кого: Анна Фёдорова <a.fedorova@company.ru>\nКому: it-support@company.ru\nДата: 22.05.2025 09:10\nТема: Неисправность оборудования: ноутбук\n\nПрошу принять заявку на ремонт. Устройство: ноутбук. Симптомы: перестал работать после падения. Сотрудник: Михаил Сидоров.\n\nСпасибо.\n\nВложение: invoice.pdf",
         "links": [],
-        "category": "incidents",
+        "attachments": [],
+        "category": "hardware_faults",
         "scores": {
-            "incidents": 50.0,
-            "service_requests": 8.0,
-            "spam": 0.0,
-            "hardware_faults": 2.0
+            "incidents": 8,
+            "service_requests": 7,
+            "spam": 0,
+            "hardware_faults": 30
         },
-        "matched_subject_markers": [
-            "не могу войти",
-            "confluence"
-        ],
+        "matched_subject_markers": [],
         "matched_text_markers": [
-            "не отвечает",
-            "confluence"
+            "перестал работать",
+            "после падения",
+            "вложение",
+            "invoice",
+            "ноутбук"
         ],
-        "decision_reason": "Выбрана категория 'incidents', score=50.0, отрыв от второго места=42.0",
-        "move_status": "пропущено: нет имени файла"
+        "decision_reason": "Выбрана категория 'hardware_faults', score=30, отрыв от второго места=22",
+        "expected_category": "hardware_faults",
+        "is_correct": true
     },
     {
-        "file_name": "",
-        "subject": "[IT] [INFO] Плановый отчёт мониторинга",
-        "sender": "Людмила Захарова <l.zaharova@corp.local>",
-        "recipient": "it-support@company.ru",
-        "date": "2025-03-04 15:51",
-        "text": "Hi,\n\nALERT: Database cluster не прошёл healthcheck 3 раза подряд.\nТребуется проверка.\n\nФайл: error_log.txt",
-        "links": [],
-        "category": "incidents",
-        "scores": {
-            "incidents": 53.0,
-            "service_requests": 0.0,
-            "spam": 0.0,
-            "hardware_faults": 0.0
-        },
-        "matched_subject_markers": [
-            "плановый отчет мониторинга"
-        ],
-        "matched_text_markers": [
-            "healthcheck",
-            "alert"
-        ],
-        "decision_reason": "Выбрана категория 'incidents', score=53.0, отрыв от второго места=53.0",
-        "move_status": "пропущено: нет имени файла"
-    },
-    {
-        "file_name": "",
+        "file_name": "mail_0077.txt",
         "subject": "",
-        "sender": "o.belova@client.biz",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "От кого: Кирилл Морозов <k.morozov@company.ru>\nКому: it-support@company.ru\nДата: 24.02.2025 10:48\nТема: Изменение графика работы\n\nКоллеги, привет!\n\nВ связи с переводом Павел Соколов в отдел Маркетинг прошу обновить данные и пересмотреть уровни доступа.\n\nЕсли вопрос не к вам — перенаправьте, пожалуйста.\n\nФайл: error_log.txt",
+        "links": [],
+        "attachments": [],
+        "category": "service_requests",
+        "scores": {
+            "incidents": 0,
+            "service_requests": 26,
+            "spam": 0,
+            "hardware_faults": 0
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "пересмотреть уровни доступа",
+            "обновить данные"
+        ],
+        "decision_reason": "Выбрана категория 'service_requests', score=26, отрыв от второго места=26",
+        "expected_category": "service_requests",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0083.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "Коллеги, привет!\n\nПриглашаем на демо новой версии системы. Дата: 24.8.2025, 11:00.\n\nBest regards,\nКирилл Морозов\n\nВложение: invoice.pdf\n\nКод ошибки: ERR_746",
+        "links": [],
+        "attachments": [],
+        "category": "service_requests",
+        "scores": {
+            "incidents": 0,
+            "service_requests": 20,
+            "spam": 0,
+            "hardware_faults": 0
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "приглашаем на демо",
+            "вложение",
+            "invoice"
+        ],
+        "decision_reason": "Выбрана категория 'service_requests', score=20, отрыв от второго места=20",
+        "expected_category": "service_requests",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0003.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "[IT] Корпоративный дайджест — выпуск #11 Hi,\n\nНапоминаем: в пятницу плановые технические работы с 22:00 до 02:00. Ряд систем будет недоступен.\n\nС уважением,\nСветлана Попова",
+        "links": [],
+        "attachments": [],
+        "category": "incidents",
+        "scores": {
+            "incidents": 18,
+            "service_requests": 13,
+            "spam": 0,
+            "hardware_faults": 0
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "плановые технические работы",
+            "корпоративный дайджест",
+            "недоступен"
+        ],
+        "decision_reason": "Выбрана категория 'incidents', score=18, отрыв от второго места=5",
+        "expected_category": "incidents",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0018.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "От кого: Ольга Белова <o.belova@client.biz>\nКому: it-support@company.ru\nДата: 11.02.2025 10:56\nТема: Неисправность оборудования: сканер\n\nHi,\n\nсканер не включается с вчерашнего дня. Пробовал перезагрузить — не помогло. Нужна помощь.\n\nOtpravleno s iPhone",
+        "links": [],
+        "attachments": [],
+        "category": "hardware_faults",
+        "scores": {
+            "incidents": 3,
+            "service_requests": 1,
+            "spam": 0,
+            "hardware_faults": 22
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "не включается",
+            "сканер"
+        ],
+        "decision_reason": "Выбрана категория 'hardware_faults', score=22, отрыв от второго места=19",
+        "expected_category": "hardware_faults",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0089.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "От кого: Светлана Попова <s.popova@company.ru>\nКому: it-support@company.ru\nДата: 27.01.2025 16:54\nТема: Изменение графика работы\n\nДобрый день.\n\nПрошу согласовать ежегодный отпуск с 3.6.2025 на 14 дней.\n\nOtpravleno s iPhone\n\nВо вложении: screenshot.png",
+        "links": [],
+        "attachments": [],
+        "category": "service_requests",
+        "scores": {
+            "incidents": 0,
+            "service_requests": 12,
+            "spam": 0,
+            "hardware_faults": 0
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "ежегодный отпуск"
+        ],
+        "decision_reason": "Выбрана категория 'service_requests', score=12, отрыв от второго места=12",
+        "expected_category": "service_requests",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0060.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "Финальная версия: инструкция Коллеги, привет!\n\nПрошу подтвердить, что инструкция получен и принят в работу.\n\nOtpravleno s iPhone\n\nВложение: invoice.pdf",
+        "links": [],
+        "attachments": [],
+        "category": "service_requests",
+        "scores": {
+            "incidents": 0,
+            "service_requests": 28,
+            "spam": 0,
+            "hardware_faults": 0
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "прошу подтвердить",
+            "финальная версия",
+            "вложение",
+            "invoice"
+        ],
+        "decision_reason": "Выбрана категория 'service_requests', score=28, отрыв от второго места=28",
+        "expected_category": "service_requests",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0065.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "[IT] Fwd: Жалоба клиента — нет ответа на тикет Hi,\n\n---------- Forwarded message ---------\nFrom: Елена Новикова\nSubject: Жалоба клиента — нет ответа на тикет\n\nВнешний партнёр сообщает об ошибке при подключении к нашему API. Ошибка: 401 Unauthorized. Токен действующий.\n\n---\nПеренаправляю вам, так как не знаю, к кому именно обращаться.\n\nСпасибо.\n\nФайл: error_log.txt",
+        "links": [],
+        "attachments": [],
+        "category": "incidents",
+        "scores": {
+            "incidents": 29,
+            "service_requests": 2,
+            "spam": 0,
+            "hardware_faults": 1
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "нет ответа на тикет",
+            "жалоба клиента",
+            "ошибка",
+            "тикет"
+        ],
+        "decision_reason": "Выбрана категория 'incidents', score=29, отрыв от второго места=27",
+        "expected_category": "incidents",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0108.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "Ot kogo: a.fedorova@company.ru <a.fedorova@company.ru>\nKomu: it-support@company.ru\nData: 25.03.2025 17:46\nTema: Izmenenie grafika raboty\n\nNapravlyayu bolnichnyy list dlya vneseniya v sistemu. Period netrudosposobnosti: 10 dney.",
+        "links": [],
+        "attachments": [],
+        "category": "service_requests",
+        "scores": {
+            "incidents": 0,
+            "service_requests": 32,
+            "spam": 0,
+            "hardware_faults": 0
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "izmenenie grafika",
+            "bolnichnyy list",
+            "napravlyayu"
+        ],
+        "decision_reason": "Выбрана категория 'service_requests', score=32, отрыв от второго места=32",
+        "expected_category": "service_requests",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0009.txt",
+        "subject": "",
+        "sender": "",
         "recipient": "",
         "date": "",
         "text": "Добрый день.\n\nУ нас критичный инцидент: корпоративный портал возвращает ошибку 500 уже 40 минут. Затронуты примерно 15 сотрудников. Просим срочно проверить.\n\nOtpravleno s iPhone",
         "links": [],
+        "attachments": [],
         "category": "incidents",
         "scores": {
-            "incidents": 26,
+            "incidents": 35,
             "service_requests": 2,
             "spam": 0,
             "hardware_faults": 0
         },
         "matched_subject_markers": [],
         "matched_text_markers": [
+            "возвращает ошибку 500",
             "корпоративный портал",
             "затронуты примерно",
             "инцидент"
         ],
-        "decision_reason": "Выбрана категория 'incidents', score=26, отрыв от второго места=24",
-        "move_status": "пропущено: нет имени файла"
+        "decision_reason": "Выбрана категория 'incidents', score=35, отрыв от второго места=33",
+        "expected_category": "incidents",
+        "is_correct": true
     },
     {
-        "file_name": "",
-        "subject": "Запрос от внешнего пользователя",
-        "sender": "Иван Петров <i.petrov@company.ru>",
-        "recipient": "it-support@company.ru",
-        "date": "24.01.2025 11:10",
-        "text": "Коллеги, привет!\n\nКлиент просит прислать актуальную инструкцию по работе с личным кабинетом.",
-        "links": [],
-        "category": "прочее",
-        "scores": {
-            "incidents": -6.0,
-            "service_requests": -3.5,
-            "spam": -6.0,
-            "hardware_faults": -6.0
-        },
-        "matched_subject_markers": [
-            "запрос"
-        ],
-        "matched_text_markers": [
-            "актуальную инструкцию"
-        ],
-        "decision_reason": "Лучший результат у категории 'service_requests' = -3.5, но нужен минимум 10",
-        "move_status": "пропущено: нет имени файла"
-    },
-    {
-        "file_name": "",
-        "subject": "Заявка на отпуск",
-        "sender": "Кирилл Морозов <k.morozov@company.ru>",
-        "recipient": "it-support@company.ru",
-        "date": "2025-04-19 16:42",
-        "text": "Прошу подготовить рабочее место и доступы для нового сотрудника noreply. Выход на работу — в следующий понедельник. Отдел: Логистика.\n\nP.S. Это уже второй запрос по данной теме.\n\nВложение: invoice.pdf\n\nID заявки: #86569",
-        "links": [],
-        "category": "service_requests",
-        "scores": {
-            "incidents": -7.5,
-            "service_requests": 34.0,
-            "spam": -7.5,
-            "hardware_faults": -7.5
-        },
-        "matched_subject_markers": [
-            "отпуск",
-            "заявка"
-        ],
-        "matched_text_markers": [
-            "доступы для нового сотрудника",
-            "подготовить рабочее место",
-            "вложение",
-            "invoice",
-            "запрос"
-        ],
-        "decision_reason": "Выбрана категория 'service_requests', score=34.0, отрыв от второго места=41.5",
-        "move_status": "пропущено: нет имени файла"
-    },
-    {
-        "file_name": "",
-        "subject": "URGENT: BI-система не отвечает",
-        "sender": "v.gromov@partner.ru",
+        "file_name": "mail_0051.txt",
+        "subject": "",
+        "sender": "",
         "recipient": "",
         "date": "",
-        "text": "Уважаемые коллеги,\n\nУ нас критичный инцидент: BI-система возвращает ошибку 500 уже 40 минут. Затронуты примерно 15 сотрудников. Просим срочно проверить.\n\nСпасибо.\n\nПрикрепил: contract_v2.docx",
+        "text": "Ошибка 500 при работе с облачное хранилище Уважаемые коллеги,\n\nПосле утреннего обновления облачное хранилище перестал открываться у всего отдела Аналитика. Ошибка появляется сразу при входе. Работа полностью остановлена, нужна срочная помощь.\n\nЕсли вопрос не к вам — перенаправьте, пожалуйста.\n\nФайл: error_log.txt",
         "links": [],
+        "attachments": [],
         "category": "incidents",
         "scores": {
-            "incidents": 51.0,
-            "service_requests": 9.5,
-            "spam": 0.0,
-            "hardware_faults": 5.0
+            "incidents": 68,
+            "service_requests": 0,
+            "spam": 0,
+            "hardware_faults": 0
         },
-        "matched_subject_markers": [
-            "не отвечает",
-            "bi-система"
-        ],
+        "matched_subject_markers": [],
         "matched_text_markers": [
-            "затронуты примерно",
-            "bi-система",
-            "инцидент"
+            "работа полностью остановлена",
+            "после утреннего обновления",
+            "ошибка появляется сразу",
+            "перестал открываться",
+            "облачное хранилище",
+            "ошибка 500"
         ],
-        "decision_reason": "Выбрана категория 'incidents', score=51.0, отрыв от второго места=41.5",
-        "move_status": "пропущено: нет имени файла"
+        "decision_reason": "Выбрана категория 'incidents', score=68, отрыв от второго места=68",
+        "expected_category": "incidents",
+        "is_correct": true
     },
     {
-        "file_name": "",
-        "subject": "Fwd: Акт выполненных работ — апрель",
-        "sender": "Наталья Лебедева <n.lebedeva@corp.local>",
-        "recipient": "it-support@company.ru",
-        "date": "2025-03-08 11:42",
-        "text": "Просим подтвердить получение счёта №5247. Оплата по договору должна пройти до 9.7.2025.\n\nВо вложении: screenshot.png",
+        "file_name": "mail_0048.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "От кого: Павел Соколов <p.sokolov@vendor.net>\nКому: it-support@company.ru\nДата: 24.03.2025 09:49\nТема: \n\nДобрый день.\n\nОбнаружили расхождение в реквизитах приложение к договоруа. Просим проверить раздел 3 и вернуть исправленный вариант.\n\nЕсли вопрос не к вам — перенаправьте, пожалуйста.\n\nВложение: invoice.pdf",
         "links": [],
-        "category": "прочее",
+        "attachments": [],
+        "category": "service_requests",
         "scores": {
-            "incidents": -27.0,
-            "service_requests": -27.0,
-            "spam": -27.0,
-            "hardware_faults": -27.0
+            "incidents": 0,
+            "service_requests": 29,
+            "spam": 0,
+            "hardware_faults": 0
         },
-        "matched_subject_markers": [
-            "акт выполненных работ"
-        ],
+        "matched_subject_markers": [],
         "matched_text_markers": [
+            "расхождение в реквизитах",
+            "приложение к",
+            "вложение",
+            "invoice"
+        ],
+        "decision_reason": "Выбрана категория 'service_requests', score=29, отрыв от второго места=29",
+        "expected_category": "service_requests",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0066.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "Требуется срочная верификация аккаунта Здравствуйте!\n\nУважаемые коллеги,\n\nВ связи с плановым обновлением VPN просим всех сотрудников установить новый клиент по ссылке:\nhttp://vpn-update.company.ru.cdn-service.net\nУстановка обязательна до конца рабочего дня.\n\nOtpravleno s iPhone",
+        "links": [],
+        "attachments": [],
+        "category": "spam",
+        "scores": {
+            "incidents": 0,
+            "service_requests": 3,
+            "spam": 48,
+            "hardware_faults": 0
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "срочная верификация аккаунта",
+            "плановым обновлением vpn",
+            "cdn-service",
+            "vpn-update"
+        ],
+        "decision_reason": "Выбрана категория 'spam', score=48, отрыв от второго места=45",
+        "expected_category": "spam",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0061.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "Запрос доступа к система согласования Уважаемые коллеги,\n\nНужны права на система согласования для временного сотрудника. Доступ требуется на 2 недели, только чтение.\n\nВо вложении: screenshot.png",
+        "links": [],
+        "attachments": [],
+        "category": "service_requests",
+        "scores": {
+            "incidents": 0,
+            "service_requests": 39,
+            "spam": 0,
+            "hardware_faults": 0
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "система согласования",
+            "доступ требуется",
+            "нужны права",
+            "запрос"
+        ],
+        "decision_reason": "Выбрана категория 'service_requests', score=39, отрыв от второго места=39",
+        "expected_category": "service_requests",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0094.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "Критический инцидент — BI-система недоступен Здравствуйте!\n\nПосле утреннего обновления BI-система перестал открываться у всего отдела Юристы. Ошибка появляется сразу при входе. Работа полностью остановлена, нужна срочная помощь.\n\nOtpravleno s iPhone\n\nФайл: error_log.txt\n\nID заявки: #99742",
+        "links": [],
+        "attachments": [],
+        "category": "incidents",
+        "scores": {
+            "incidents": 67,
+            "service_requests": 4,
+            "spam": 0,
+            "hardware_faults": 0
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "работа полностью остановлена",
+            "после утреннего обновления",
+            "ошибка появляется сразу",
+            "перестал открываться",
+            "критический инцидент",
+            "недоступен",
+            "bi-система"
+        ],
+        "decision_reason": "Выбрана категория 'incidents', score=67, отрыв от второго места=63",
+        "expected_category": "incidents",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0017.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "Закрывающие документы за март Hi,\n\nНаправляем счёт и акт за оказанные услуги за март. Просьба передать в бухгалтерию для оплаты до конца недели.\n\nСпасибо.\n\nФайл: error_log.txt\n\nID заявки: #83385",
+        "links": [],
+        "attachments": [],
+        "category": "service_requests",
+        "scores": {
+            "incidents": 0,
+            "service_requests": 25,
+            "spam": 0,
+            "hardware_faults": 0
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "закрывающие документы",
+            "направляем счет и акт"
+        ],
+        "decision_reason": "Выбрана категория 'service_requests', score=25, отрыв от второго места=25",
+        "expected_category": "service_requests",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0057.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "Нет доступа к Confluence после перевода Коллеги, привет!\n\nНужны права на Confluence для временного сотрудника. Доступ требуется на 2 недели, только чтение.\n\nOtpravleno s iPhone\n\nВложение: invoice.pdf",
+        "links": [],
+        "attachments": [],
+        "category": "service_requests",
+        "scores": {
+            "incidents": 13,
+            "service_requests": 47,
+            "spam": 0,
+            "hardware_faults": 0
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "доступ требуется",
+            "после перевода",
+            "нет доступа",
+            "нужны права",
+            "confluence",
+            "вложение",
+            "invoice"
+        ],
+        "decision_reason": "Выбрана категория 'service_requests', score=47, отрыв от второго места=34",
+        "expected_category": "service_requests",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0068.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "Нужны права в BI-система для нового сотрудника Здравствуйте!\n\nПрошу выдать доступ сотруднику Елена Новикова (Логистика) к системе BI-система. Уровень доступа — чтение и редактирование. Руководитель согласовал.\n\nBest regards,\nВиктор Громов\n\nФайл: error_log.txt\n\nКод ошибки: ERR_590",
+        "links": [],
+        "attachments": [],
+        "category": "service_requests",
+        "scores": {
+            "incidents": 0,
+            "service_requests": 54,
+            "spam": 0,
+            "hardware_faults": 0
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "руководитель согласовал",
+            "прошу выдать доступ",
+            "уровень доступа",
+            "нужны права",
+            "bi-система"
+        ],
+        "decision_reason": "Выбрана категория 'service_requests', score=54, отрыв от второго места=54",
+        "expected_category": "service_requests",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0013.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "Fwd: Акт выполненных работ — апрель Просим подтвердить получение счёта №5247. Оплата по договору должна пройти до 9.7.2025.\n\nВо вложении: screenshot.png",
+        "links": [],
+        "attachments": [],
+        "category": "service_requests",
+        "scores": {
+            "incidents": 0,
+            "service_requests": 39,
+            "spam": 0,
+            "hardware_faults": 0
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "акт выполненных работ",
             "оплата по договору",
             "получение счета"
         ],
-        "decision_reason": "Лучший результат у категории 'incidents' = -27.0, но нужен минимум 10",
-        "move_status": "пропущено: нет имени файла"
+        "decision_reason": "Выбрана категория 'service_requests', score=39, отрыв от второго места=39",
+        "expected_category": "service_requests",
+        "is_correct": true
     },
     {
-        "file_name": "",
-        "subject": "Неисправность оборудования: гарнитура",
-        "sender": "Тимур Андреев <t.andreev@company.ru>",
-        "recipient": "it-support@company.ru",
-        "date": "2025-01-18 11:23",
-        "text": "Hi,\n\nПрошу принять заявку на ремонт. Устройство: гарнитура. Симптомы: не определяется системой. Сотрудник: Михаил Сидоров.\n\nЕсли вопрос не к вам — перенаправьте, пожалуйста.",
+        "file_name": "mail_0027.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "От кого: Михаил Сидоров <m.sidorov@company.ru>\nКому: it-support@company.ru\nДата: 08.03.2025 11:53\nТема: \n\nУважаемые коллеги,\n\nПосле обновления системы Adobe Reader не открывает файлы нужного формата. Раньше всё работало.\n\nТакже хотел уточнить ещё один момент:\n\nНаправляю больничный лист для внесения в систему. Период нетрудоспособности: 7 дней.\n\nID заявки: #60205",
         "links": [],
-        "category": "hardware_faults",
-        "scores": {
-            "incidents": 16.0,
-            "service_requests": 0.0,
-            "spam": 0.0,
-            "hardware_faults": 35.0
-        },
-        "matched_subject_markers": [
-            "гарнитура"
-        ],
-        "matched_text_markers": [
-            "не определяется системой",
-            "гарнитура"
-        ],
-        "decision_reason": "Выбрана категория 'hardware_faults', score=35.0, отрыв от второго места=19.0",
-        "move_status": "пропущено: нет имени файла"
-    },
-    {
-        "file_name": "",
-        "subject": "URGENT: Больничный лист",
-        "sender": "Павел Соколов <p.sokolov@vendor.net>",
-        "recipient": "it-support@company.ru",
-        "date": "2025-01-30 09:47",
-        "text": "Здравствуйте!\n\nПрошу согласовать ежегодный отпуск с 9.7.2025 на 14 дней.\n\nЕсли вопрос не к вам — перенаправьте, пожалуйста.\n\nВо вложении: screenshot.png",
-        "links": [],
-        "category": "прочее",
-        "scores": {
-            "incidents": -21.0,
-            "service_requests": -21.0,
-            "spam": -21.0,
-            "hardware_faults": -21.0
-        },
-        "matched_subject_markers": [
-            "больничный лист"
-        ],
-        "matched_text_markers": [
-            "ежегодный отпуск"
-        ],
-        "decision_reason": "Лучший результат у категории 'incidents' = -21.0, но нужен минимум 10",
-        "move_status": "пропущено: нет имени файла"
-    },
-    {
-        "file_name": "",
-        "subject": "Ошибка в антивирус после обновления",
-        "sender": "Иван Петров <i.petrov@company.ru>",
-        "recipient": "it-support@company.ru",
-        "date": "2025-03-27 10:40",
-        "text": "Hi,\n\nПосле обновления системы антивирус не открывает файлы нужного формата. Раньше всё работало.\n\nBest regards,\nСветлана Попова\n\nПрикрепил: contract_v2.docx\n\nID заявки: #19862",
-        "links": [],
+        "attachments": [],
         "category": "incidents",
         "scores": {
-            "incidents": 44.5,
-            "service_requests": 9.5,
-            "spam": 0.0,
-            "hardware_faults": 2.5
+            "incidents": 24,
+            "service_requests": 12,
+            "spam": 0,
+            "hardware_faults": 0
         },
-        "matched_subject_markers": [
-            "антивирус",
-            "ошибка"
-        ],
+        "matched_subject_markers": [],
         "matched_text_markers": [
             "не открывает файлы нужного формата",
             "после обновления системы",
-            "антивирус"
+            "больничный лист"
         ],
-        "decision_reason": "Выбрана категория 'incidents', score=44.5, отрыв от второго места=35.0",
-        "move_status": "пропущено: нет имени файла"
+        "decision_reason": "Выбрана категория 'incidents', score=24, отрыв от второго места=12",
+        "expected_category": "incidents",
+        "is_correct": true
     },
     {
-        "file_name": "",
-        "subject": "Закрывающие документы за март",
-        "sender": "Тимур Андреев <t.andreev@company.ru>",
-        "recipient": "it-support@company.ru",
-        "date": "2025-05-30 16:09",
-        "text": "Hi,\n\nНаправляем счёт и акт за оказанные услуги за март. Просьба передать в бухгалтерию для оплаты до конца недели.\n\nСпасибо.\n\nФайл: error_log.txt\n\nID заявки: #83385",
+        "file_name": "mail_0007.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "Не могу войти в Confluence — у всех отдела Добрый день.\n\nСервис Confluence не отвечает с 9:15. Пробовали перезайти — не помогает. Несколько коллег из IT подтвердили ту же проблему.\n\nС уважением,\nАлексей Козлов\n\nФайл: error_log.txt",
         "links": [],
-        "category": "прочее",
+        "attachments": [],
+        "category": "incidents",
         "scores": {
-            "incidents": -13.5,
-            "service_requests": -13.5,
-            "spam": -13.5,
-            "hardware_faults": -13.5
+            "incidents": 23,
+            "service_requests": 3,
+            "spam": 0,
+            "hardware_faults": 2
         },
-        "matched_subject_markers": [
-            "закрывающие документы"
-        ],
+        "matched_subject_markers": [],
         "matched_text_markers": [
-            "направляем счет и акт"
+            "не могу войти в",
+            "не отвечает",
+            "confluence"
         ],
-        "decision_reason": "Лучший результат у категории 'incidents' = -13.5, но нужен минимум 10",
-        "move_status": "пропущено: нет имени файла"
+        "decision_reason": "Выбрана категория 'incidents', score=23, отрыв от второго места=20",
+        "expected_category": "incidents",
+        "is_correct": true
     },
     {
-        "file_name": "",
-        "subject": "Неисправность оборудования: сканер",
-        "sender": "Ольга Белова <o.belova@client.biz>",
-        "recipient": "it-support@company.ru",
-        "date": "11.02.2025 10:56",
-        "text": "Hi,\n\nсканер не включается с вчерашнего дня. Пробовал перезагрузить — не помогло. Нужна помощь.\n\nOtpravleno s iPhone",
+        "file_name": "mail_0090.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "[WARNING] Disk usage > 80% на prod Коллеги, привет!\n\nАвтоматическое уведомление от системы мониторинга.\n\nСервис: Auth Service\nСтатус: WARNING\nМетрика: CPU usage 80%\nВремя: 2026-05-28 19:58\n\nЭто письмо сгенерировано автоматически.\n\nP.S. Это уже второй запрос по данной теме.",
         "links": [],
-        "category": "hardware_faults",
+        "attachments": [],
+        "category": "incidents",
         "scores": {
-            "incidents": 3.0,
-            "service_requests": 1.0,
-            "spam": 0.0,
-            "hardware_faults": 51.0
+            "incidents": 30,
+            "service_requests": 1,
+            "spam": 0,
+            "hardware_faults": 2
         },
-        "matched_subject_markers": [
-            "сканер"
-        ],
+        "matched_subject_markers": [],
         "matched_text_markers": [
-            "не включается",
-            "сканер"
+            "автоматическое уведомление от системы мониторинга",
+            "disk usage",
+            "cpu usage",
+            "запрос",
+            "prod"
         ],
-        "decision_reason": "Выбрана категория 'hardware_faults', score=51.0, отрыв от второго места=48.0",
-        "move_status": "пропущено: нет имени файла"
+        "decision_reason": "Выбрана категория 'incidents', score=30, отрыв от второго места=28",
+        "expected_category": "incidents",
+        "is_correct": true
     },
     {
-        "file_name": "",
-        "subject": "Правки к техническое заданиеу",
-        "sender": "Ольга Белова <o.belova@client.biz>",
-        "recipient": "it-support@company.ru",
-        "date": "21.02.2025 15:22",
-        "text": "Добрый день.\n\nВо вложении новая версия техническое заданиеа с учётом ваших комментариев.\n\nBest regards,\nalerts\n\nВложение: invoice.pdf\n\nКод ошибки: ERR_891",
+        "file_name": "mail_0082.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "Партнёр не может подключиться к API Уважаемые коллеги,\n\nПолучили жалобу: клиент не может зарегистрироваться на портале. Кнопка 'Подтвердить' не работает.\n\nСпасибо.",
         "links": [],
-        "category": "прочее",
+        "attachments": [],
+        "category": "incidents",
         "scores": {
-            "incidents": -6,
-            "service_requests": -4,
-            "spam": -6,
-            "hardware_faults": -6
+            "incidents": 12,
+            "service_requests": 0,
+            "spam": 0,
+            "hardware_faults": 0
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "не может зарегистрироваться"
+        ],
+        "decision_reason": "Выбрана категория 'incidents', score=12, отрыв от второго места=12",
+        "expected_category": "incidents",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0080.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "[CRITICAL] Disk usage > 75% на prod Уважаемые коллеги,\n\nПлановый отчёт мониторинга за сутки.\nUptime: 99.9%\nОшибок 5xx: 9\nСреднее время ответа: 118ms\n\nOtpravleno s iPhone\n\nПрикрепил: contract_v2.docx",
+        "links": [],
+        "attachments": [],
+        "category": "incidents",
+        "scores": {
+            "incidents": 47,
+            "service_requests": 0,
+            "spam": 0,
+            "hardware_faults": 2
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "плановый отчет мониторинга",
+            "disk usage",
+            "ошибок 5xx",
+            "uptime",
+            "prod"
+        ],
+        "decision_reason": "Выбрана категория 'incidents', score=47, отрыв от второго места=45",
+        "expected_category": "incidents",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0100.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "Падает Service Desk, работа остановлена Hi,\n\nПосле утреннего обновления Service Desk перестал открываться у всего отдела Закупки. Ошибка появляется сразу при входе. Работа полностью остановлена, нужна срочная помощь.\n\nBest regards,\nПавел Соколов",
+        "links": [],
+        "attachments": [],
+        "category": "incidents",
+        "scores": {
+            "incidents": 61,
+            "service_requests": 2,
+            "spam": 0,
+            "hardware_faults": 0
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "работа полностью остановлена",
+            "после утреннего обновления",
+            "ошибка появляется сразу",
+            "перестал открываться",
+            "работа остановлена",
+            "service desk"
+        ],
+        "decision_reason": "Выбрана категория 'incidents', score=61, отрыв от второго места=59",
+        "expected_category": "incidents",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0025.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "Заявка на отпуск Добрый день.\n\nПрошу подготовить рабочее место и доступы для нового сотрудника Сергей Волков. Выход на работу — в следующий понедельник. Отдел: Закупки.\n\nСпасибо.\n\nФайл: error_log.txt\n\nКод ошибки: ERR_355",
+        "links": [],
+        "attachments": [],
+        "category": "service_requests",
+        "scores": {
+            "incidents": 0,
+            "service_requests": 38,
+            "spam": 0,
+            "hardware_faults": 0
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "доступы для нового сотрудника",
+            "подготовить рабочее место",
+            "отпуск",
+            "заявка"
+        ],
+        "decision_reason": "Выбрана категория 'service_requests', score=38, отрыв от второго места=38",
+        "expected_category": "service_requests",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0016.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "Ошибка в антивирус после обновления Hi,\n\nПосле обновления системы антивирус не открывает файлы нужного формата. Раньше всё работало.\n\nBest regards,\nСветлана Попова\n\nПрикрепил: contract_v2.docx\n\nID заявки: #19862",
+        "links": [],
+        "attachments": [],
+        "category": "incidents",
+        "scores": {
+            "incidents": 29,
+            "service_requests": 3,
+            "spam": 0,
+            "hardware_faults": 1
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "не открывает файлы нужного формата",
+            "после обновления системы",
+            "антивирус",
+            "ошибка"
+        ],
+        "decision_reason": "Выбрана категория 'incidents', score=29, отрыв от второго места=26",
+        "expected_category": "incidents",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0032.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "Счёт на оплату №4008 Здравствуйте!\n\nВысылаем закрывающие документы. Если файлы не прикрепились — сообщите.\n\nOtpravleno s iPhone\n\nВложение: invoice.pdf\n\nID заявки: #89593",
+        "links": [],
+        "attachments": [],
+        "category": "service_requests",
+        "scores": {
+            "incidents": 0,
+            "service_requests": 32,
+            "spam": 0,
+            "hardware_faults": 0
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "закрывающие документы",
+            "счет на оплату",
+            "вложение",
+            "invoice"
+        ],
+        "decision_reason": "Выбрана категория 'service_requests', score=32, отрыв от второго места=32",
+        "expected_category": "service_requests",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0038.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "Запрос от внешнего пользователя Добрый день.\n\nПолучили жалобу: клиент не может зарегистрироваться на портале. Кнопка 'Подтвердить' не работает.\n\nФайл: error_log.txt",
+        "links": [],
+        "attachments": [],
+        "category": "incidents",
+        "scores": {
+            "incidents": 12,
+            "service_requests": 1,
+            "spam": 0,
+            "hardware_faults": 0
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "не может зарегистрироваться",
+            "запрос"
+        ],
+        "decision_reason": "Выбрана категория 'incidents', score=12, отрыв от второго места=11",
+        "expected_category": "incidents",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0092.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "От кого: Юлия Кириллова <yu.kirillova@company.ru>\nКому: it-support@company.ru\nДата: 18.05.2025 08:40\nТема: Правки к инструкцияу\n\nВо вложении новая версия инструкцияа с учётом ваших комментариев.\n\nЕсли вопрос не к вам — перенаправьте, пожалуйста.\n\nВложение: invoice.pdf",
+        "links": [],
+        "attachments": [],
+        "category": "service_requests",
+        "scores": {
+            "incidents": 0,
+            "service_requests": 16,
+            "spam": 0,
+            "hardware_faults": 0
         },
         "matched_subject_markers": [],
         "matched_text_markers": [
@@ -471,34 +1418,1381 @@
             "вложение",
             "invoice"
         ],
-        "decision_reason": "Лучший результат у категории 'service_requests' = -4, но нужен минимум 10",
-        "move_status": "пропущено: нет имени файла"
+        "decision_reason": "Выбрана категория 'service_requests', score=16, отрыв от второго места=16",
+        "expected_category": "service_requests",
+        "is_correct": true
     },
     {
-        "file_name": "",
-        "subject": "Проблема с установкой Zoom",
-        "sender": "alerts@grafana.internal",
+        "file_name": "mail_0031.txt",
+        "subject": "",
+        "sender": "",
         "recipient": "",
         "date": "",
-        "text": "Zoom перестал запускаться после вчерашнего обновления. Появляется ошибка при старте. Переустановка не помогла.\n\nПрикрепил: contract_v2.docx",
+        "text": "Вопрос от клиента по заявке Клиент просит прислать актуальную инструкцию по работе с личным кабинетом.\n\nС уважением,\nИван Петров",
         "links": [],
+        "attachments": [],
+        "category": "service_requests",
+        "scores": {
+            "incidents": 0,
+            "service_requests": 12,
+            "spam": 0,
+            "hardware_faults": 0
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "актуальную инструкцию"
+        ],
+        "decision_reason": "Выбрана категория 'service_requests', score=12, отрыв от второго места=12",
+        "expected_category": "service_requests",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0067.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "Корпоративный дайджест — выпуск #94 Добрый день.\n\nВ этом выпуске: итоги квартала, новые сотрудники, изменения в политике ИБ. Полная версия дайджеста доступна на корпоративном портале.\n\nЕсли вопрос не к вам — перенаправьте, пожалуйста.\n\nВложение: invoice.pdf\n\nID заявки: #44782\n\nКод ошибки: ERR_859",
+        "links": [],
+        "attachments": [],
+        "category": "service_requests",
+        "scores": {
+            "incidents": 0,
+            "service_requests": 40,
+            "spam": 0,
+            "hardware_faults": 0
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "корпоративный дайджест",
+            "итоги квартала",
+            "политике иб",
+            "вложение",
+            "invoice"
+        ],
+        "decision_reason": "Выбрана категория 'service_requests', score=40, отрыв от второго места=40",
+        "expected_category": "service_requests",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0012.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "URGENT: BI-система не отвечает Уважаемые коллеги,\n\nУ нас критичный инцидент: BI-система возвращает ошибку 500 уже 40 минут. Затронуты примерно 15 сотрудников. Просим срочно проверить.\n\nСпасибо.\n\nПрикрепил: contract_v2.docx",
+        "links": [],
+        "attachments": [],
         "category": "incidents",
         "scores": {
-            "incidents": 37.0,
-            "service_requests": 8.0,
-            "spam": 0.0,
-            "hardware_faults": 1.0
+            "incidents": 45,
+            "service_requests": 3,
+            "spam": 0,
+            "hardware_faults": 2
         },
-        "matched_subject_markers": [
-            "zoom"
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "возвращает ошибку 500",
+            "затронуты примерно",
+            "не отвечает",
+            "bi-система",
+            "инцидент"
         ],
+        "decision_reason": "Выбрана категория 'incidents', score=45, отрыв от второго места=42",
+        "expected_category": "incidents",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0004.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "От кого: Виктор Громов <v.gromov@partner.ru>\nКому: it-support@company.ru\nДата: 28.01.2025 18:19\nТема: Падает система согласования, работа остановлена\n\nДобрый день.\n\nУ нас критичный инцидент: система согласования возвращает ошибку 500 уже 40 минут. Затронуты примерно 15 сотрудников. Просим срочно проверить.\n\nЕсли вопрос не к вам — перенаправьте, пожалуйста.\n\nПрикрепил: contract_v2.docx",
+        "links": [],
+        "attachments": [],
+        "category": "incidents",
+        "scores": {
+            "incidents": 48,
+            "service_requests": 12,
+            "spam": 0,
+            "hardware_faults": 0
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "возвращает ошибку 500",
+            "система согласования",
+            "затронуты примерно",
+            "работа остановлена",
+            "инцидент"
+        ],
+        "decision_reason": "Выбрана категория 'incidents', score=48, отрыв от второго места=36",
+        "expected_category": "incidents",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0084.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "От кого: Светлана Попова <s.popova@company.ru>\nКому: it-support@company.ru\nДата: 23.06.2025 14:18\nТема: Проблема с гарнитура\n\nЗдравствуйте!\n\nПрошу принять заявку на ремонт. Устройство: гарнитура. Симптомы: не определяется системой. Сотрудник: Наталья Лебедева.\n\nС уважением,\nalerts\n\nФайл: error_log.txt",
+        "links": [],
+        "attachments": [],
+        "category": "hardware_faults",
+        "scores": {
+            "incidents": 0,
+            "service_requests": 0,
+            "spam": 0,
+            "hardware_faults": 22
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "не определяется системой",
+            "гарнитура"
+        ],
+        "decision_reason": "Выбрана категория 'hardware_faults', score=22, отрыв от второго места=22",
+        "expected_category": "hardware_faults",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0088.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "От кого: Тимур Андреев <t.andreev@company.ru>\nКому: it-support@company.ru\nДата: 23.06.2025 17:28\nТема: Не могу войти в корпоративный портал — у всех отдела\n\nКоллеги, привет!\n\nОбращаемся повторно — после первого тикета проблема не устранена. корпоративный портал по-прежнему недоступен. Нужен статус.\n\nСпасибо.",
+        "links": [],
+        "attachments": [],
+        "category": "incidents",
+        "scores": {
+            "incidents": 39,
+            "service_requests": 4,
+            "spam": 0,
+            "hardware_faults": 0
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "проблема не устранена",
+            "после первого тикета",
+            "корпоративный портал",
+            "не могу войти в",
+            "недоступен"
+        ],
+        "decision_reason": "Выбрана категория 'incidents', score=39, отрыв от второго места=35",
+        "expected_category": "incidents",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0008.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "[IT] [INFO] Плановый отчёт мониторинга Hi,\n\nALERT: Database cluster не прошёл healthcheck 3 раза подряд.\nТребуется проверка.\n\nФайл: error_log.txt",
+        "links": [],
+        "attachments": [],
+        "category": "incidents",
+        "scores": {
+            "incidents": 25,
+            "service_requests": 0,
+            "spam": 0,
+            "hardware_faults": 0
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "плановый отчет мониторинга",
+            "healthcheck",
+            "alert"
+        ],
+        "decision_reason": "Выбрана категория 'incidents', score=25, отрыв от второго места=25",
+        "expected_category": "incidents",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0098.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "Неисправность оборудования: ноутбук Hi,\n\nноутбук сломался экран с вчерашнего дня. Пробовал перезагрузить — не помогло. Нужна помощь.\n\nP.S. Это уже второй запрос по данной теме.",
+        "links": [],
+        "attachments": [],
+        "category": "hardware_faults",
+        "scores": {
+            "incidents": 1,
+            "service_requests": 2,
+            "spam": 0,
+            "hardware_faults": 32
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "сломался",
+            "ноутбук",
+            "запрос",
+            "экран"
+        ],
+        "decision_reason": "Выбрана категория 'hardware_faults', score=32, отрыв от второго места=30",
+        "expected_category": "hardware_faults",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0047.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "От кого: Людмила Захарова <l.zaharova@corp.local>\nКому: it-support@company.ru\nДата: 31.03.2025 14:21\nТема: Нужны права в VPN для нового сотрудника\n\nКоллеги, привет!\n\nПосле перевода в отдел HR у alerts пропал доступ к VPN. Раньше всё работало. Прошу восстановить.\n\nС уважением,\nKate Brown\n\nФайл: error_log.txt",
+        "links": [],
+        "attachments": [],
+        "category": "incidents",
+        "scores": {
+            "incidents": 27,
+            "service_requests": 15,
+            "spam": 0,
+            "hardware_faults": 0
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "после перевода",
+            "пропал доступ",
+            "нужны права",
+            "vpn"
+        ],
+        "decision_reason": "Выбрана категория 'incidents', score=27, отрыв от второго места=12",
+        "expected_category": "incidents",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0079.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "Нет доступа к GitLab после перевода Hi,\n\nНовый сотрудник Наталья Лебедева приступает к работе с понедельника. Нужно подготовить доступ к GitLab и корпоративной почте.\n\nПрикрепил: contract_v2.docx",
+        "links": [],
+        "attachments": [],
+        "category": "service_requests",
+        "scores": {
+            "incidents": 13,
+            "service_requests": 29,
+            "spam": 0,
+            "hardware_faults": 0
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "новый сотрудник",
+            "после перевода",
+            "нет доступа",
+            "доступ",
+            "gitlab"
+        ],
+        "decision_reason": "Выбрана категория 'service_requests', score=29, отрыв от второго места=16",
+        "expected_category": "service_requests",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0062.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "Падает корпоративный портал, работа остановлена Добрый день.\n\nНе могу войти в корпоративный портал. Логин и пароль правильные, но система выдаёт: 'Доступ запрещён'. Коллеги из моего отдела сталкиваются с тем же.\n\nP.S. Это уже второй запрос по данной теме.",
+        "links": [],
+        "attachments": [],
+        "category": "incidents",
+        "scores": {
+            "incidents": 39,
+            "service_requests": 4,
+            "spam": 12,
+            "hardware_faults": 0
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "корпоративный портал",
+            "работа остановлена",
+            "не могу войти в",
+            "доступ запрещен",
+            "логин и пароль",
+            "запрос"
+        ],
+        "decision_reason": "Выбрана категория 'incidents', score=39, отрыв от второго места=27",
+        "expected_category": "incidents",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0091.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "От кого: Павел Соколов <p.sokolov@vendor.net>\nКому: it-support@company.ru\nДата: 25.02.2025 10:35\nТема: \n\nДобрый день.\n\nОбращаемся повторно — после первого тикета проблема не устранена. Active Directory по-прежнему недоступен. Нужен статус.\n\nС уважением,\nЕлена Новикова\n\nID заявки: #65027",
+        "links": [],
+        "attachments": [],
+        "category": "incidents",
+        "scores": {
+            "incidents": 26,
+            "service_requests": 4,
+            "spam": 0,
+            "hardware_faults": 0
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "проблема не устранена",
+            "после первого тикета",
+            "active directory",
+            "недоступен"
+        ],
+        "decision_reason": "Выбрана категория 'incidents', score=26, отрыв от второго места=22",
+        "expected_category": "incidents",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0102.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "Корпоративный дайджест — выпуск #38 Коллеги, привет!\n\nВ этом выпуске: итоги квартала, новые сотрудники, изменения в политике ИБ. Полная версия дайджеста доступна на корпоративном портале.\n\nВложение: invoice.pdf",
+        "links": [],
+        "attachments": [],
+        "category": "service_requests",
+        "scores": {
+            "incidents": 0,
+            "service_requests": 40,
+            "spam": 0,
+            "hardware_faults": 0
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "корпоративный дайджест",
+            "итоги квартала",
+            "политике иб",
+            "вложение",
+            "invoice"
+        ],
+        "decision_reason": "Выбрана категория 'service_requests', score=40, отрыв от второго места=40",
+        "expected_category": "service_requests",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0001.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "браузер Chrome зависает при открытии Здравствуйте!\n\nПосле обновления системы браузер Chrome не открывает файлы нужного формата. Раньше всё работало.\n\nСпасибо.",
+        "links": [],
+        "attachments": [],
+        "category": "incidents",
+        "scores": {
+            "incidents": 24,
+            "service_requests": 0,
+            "spam": 0,
+            "hardware_faults": 0
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "не открывает файлы нужного формата",
+            "после обновления системы"
+        ],
+        "decision_reason": "Выбрана категория 'incidents', score=24, отрыв от второго места=24",
+        "expected_category": "incidents",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0033.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "Проблема Коллеги, привет!\n\n???\n\nP.S. Это уже второй запрос по данной теме.\n\nID заявки: #92213",
+        "links": [],
+        "attachments": [],
+        "category": "прочее",
+        "scores": {
+            "incidents": 0,
+            "service_requests": 1,
+            "spam": 0,
+            "hardware_faults": 0
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "запрос"
+        ],
+        "decision_reason": "Лучший результат у категории 'service_requests' = 1, но нужен минимум 10",
+        "expected_category": "прочее",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0039.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "Добрый день.\n\nУважаемый сотрудник!\n\nВаш корпоративный пароль истекает через 2 часа. Для его обновления перейдите по ссылке:\nhttp://corp-password-reset.internal.company-ru.net/update\n\nЕсли не обновить пароль, доступ будет заблокирован.\n\nIT-безопасность\n\nС уважением,\nСергей Волков",
+        "links": [],
+        "attachments": [],
+        "category": "spam",
+        "scores": {
+            "incidents": 0,
+            "service_requests": 15,
+            "spam": 41,
+            "hardware_faults": 0
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "корпоративный пароль истекает",
+            "перейдите по ссылке",
+            "обновить пароль",
+            "password-reset",
+            "доступ"
+        ],
+        "decision_reason": "Выбрана категория 'spam', score=41, отрыв от второго места=26",
+        "expected_category": "spam",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0010.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "От кого: Иван Петров <i.petrov@company.ru>\nКому: it-support@company.ru\nДата: 24.01.2025 11:10\nТема: Запрос от внешнего пользователя\n\nКоллеги, привет!\n\nКлиент просит прислать актуальную инструкцию по работе с личным кабинетом.",
+        "links": [],
+        "attachments": [],
+        "category": "service_requests",
+        "scores": {
+            "incidents": 0,
+            "service_requests": 13,
+            "spam": 0,
+            "hardware_faults": 0
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "актуальную инструкцию",
+            "запрос"
+        ],
+        "decision_reason": "Выбрана категория 'service_requests', score=13, отрыв от второго места=13",
+        "expected_category": "service_requests",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0021.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "От кого: Елена Новикова <e.novikova@corp.local>\nКому: it-support@company.ru\nДата: 09.04.2025 17:12\nТема: Сломался гарнитура — нужна замена\n\nHi,\n\nУ сотрудника noreply гарнитура не включается. Просим организовать диагностику или замену.\n\nP.S. Это уже второй запрос по данной теме.\n\nФайл: error_log.txt",
+        "links": [],
+        "attachments": [],
+        "category": "hardware_faults",
+        "scores": {
+            "incidents": 4,
+            "service_requests": 3,
+            "spam": 0,
+            "hardware_faults": 46
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "диагностику или замену",
+            "не включается",
+            "гарнитура",
+            "сломался",
+            "запрос"
+        ],
+        "decision_reason": "Выбрана категория 'hardware_faults', score=46, отрыв от второго места=42",
+        "expected_category": "hardware_faults",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0076.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "Коллеги, привет!\n\n---------- Forwarded message ---------\nFrom: alerts\nSubject: Запрос доступа к Confluence\n\nПосле перевода в отдел Закупки у Тимур Андреев пропал доступ к Confluence. Раньше всё работало. Прошу восстановить.\n\n---\nПеренаправляю вам, так как не знаю, к кому именно обращаться.\n\nЕсли вопрос не к вам — перенаправьте, пожалуйста.\n\nФайл: error_log.txt",
+        "links": [],
+        "attachments": [],
+        "category": "incidents",
+        "scores": {
+            "incidents": 27,
+            "service_requests": 3,
+            "spam": 0,
+            "hardware_faults": 0
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "после перевода",
+            "пропал доступ",
+            "confluence",
+            "запрос"
+        ],
+        "decision_reason": "Выбрана категория 'incidents', score=27, отрыв от второго места=24",
+        "expected_category": "incidents",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0063.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "От кого: Дмитрий Орлов <d.orlov@corp.local>\nКому: it-support@company.ru\nДата: 12.01.2025 08:19\nТема: Нужны права в корпоративный портал для нового сотрудника\n\nЗдравствуйте!\n\nНовый сотрудник Елена Новикова приступает к работе с понедельника. Нужно подготовить доступ к корпоративный портал и корпоративной почте.\n\nP.S. Это уже второй запрос по данной теме.\n\nФайл: error_log.txt",
+        "links": [],
+        "attachments": [],
+        "category": "service_requests",
+        "scores": {
+            "incidents": 0,
+            "service_requests": 31,
+            "spam": 0,
+            "hardware_faults": 0
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "корпоративный портал",
+            "новый сотрудник",
+            "нужны права",
+            "доступ",
+            "запрос"
+        ],
+        "decision_reason": "Выбрана категория 'service_requests', score=31, отрыв от второго места=31",
+        "expected_category": "service_requests",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0078.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "От кого: Мария Смирнова <m.smirnova@company.ru>\nКому: it-support@company.ru\nДата: 22.04.2025 08:29\nТема: Оформление нового сотрудника — noreply\n\nКоллеги, привет!\n\nОбращаемся повторно — после первого тикета проблема не устранена. BI-система по-прежнему недоступен. Нужен статус.\n\nТакже хотел уточнить ещё один момент:\n\nНаправляю больничный лист для внесения в систему. Период нетрудоспособности: 9 дней.\n\nOtpravleno s iPhone\n\nФайл: error_log.txt\n\nКод ошибки: ERR_964",
+        "links": [],
+        "attachments": [],
+        "category": "service_requests",
+        "scores": {
+            "incidents": 26,
+            "service_requests": 34,
+            "spam": 0,
+            "hardware_faults": 0
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "оформление нового сотрудника",
+            "проблема не устранена",
+            "после первого тикета",
+            "больничный лист",
+            "недоступен",
+            "bi-система"
+        ],
+        "decision_reason": "Выбрана категория 'service_requests', score=34, отрыв от второго места=8",
+        "expected_category": "service_requests",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0042.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "Массовый сбой авторизации Сервис система согласования не отвечает с 9:15. Пробовали перезайти — не помогает. Несколько коллег из Безопасность подтвердили ту же проблему.\n\nЕсли вопрос не к вам — перенаправьте, пожалуйста.\n\nФайл: error_log.txt\n\nID заявки: #37235",
+        "links": [],
+        "attachments": [],
+        "category": "service_requests",
+        "scores": {
+            "incidents": 10,
+            "service_requests": 27,
+            "spam": 0,
+            "hardware_faults": 2
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "система согласования",
+            "сбой авторизации",
+            "не отвечает"
+        ],
+        "decision_reason": "Выбрана категория 'service_requests', score=27, отрыв от второго места=17",
+        "expected_category": "service_requests",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0099.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "Fwd: Запрос доступа к VPN Здравствуйте!\n\n---------- Forwarded message ---------\nFrom: alerts\nSubject: Запрос доступа к VPN\n\nНовый сотрудник Тимур Андреев приступает к работе с понедельника. Нужно подготовить доступ к VPN и корпоративной почте.\n\n---\nПеренаправляю вам, так как не знаю, к кому именно обращаться.\n\nBest regards,\nТимур Андреев",
+        "links": [],
+        "attachments": [],
+        "category": "service_requests",
+        "scores": {
+            "incidents": 0,
+            "service_requests": 18,
+            "spam": 0,
+            "hardware_faults": 0
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "новый сотрудник",
+            "доступ",
+            "запрос",
+            "vpn"
+        ],
+        "decision_reason": "Выбрана категория 'service_requests', score=18, отрыв от второго места=18",
+        "expected_category": "service_requests",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0069.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "От кого: Людмила Захарова <l.zaharova@corp.local>\nКому: it-support@company.ru\nДата: 24.04.2025 09:57\nТема: [INFO] Плановый отчёт мониторинга\n\nУважаемые коллеги,\n\nПлановый отчёт мониторинга за сутки.\nUptime: 99.2%\nОшибок 5xx: 4\nСреднее время ответа: 144ms\n\nP.S. Это уже второй запрос по данной теме.\n\nВложение: invoice.pdf",
+        "links": [],
+        "attachments": [],
+        "category": "incidents",
+        "scores": {
+            "incidents": 36,
+            "service_requests": 8,
+            "spam": 0,
+            "hardware_faults": 0
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "плановый отчет мониторинга",
+            "ошибок 5xx",
+            "вложение",
+            "invoice",
+            "uptime",
+            "запрос"
+        ],
+        "decision_reason": "Выбрана категория 'incidents', score=36, отрыв от второго места=28",
+        "expected_category": "incidents",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0049.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "Re: Срочно: не работает Active Directory Добрый день.\n\nПосле утреннего обновления Active Directory перестал открываться у всего отдела Логистика. Ошибка появляется сразу при входе. Работа полностью остановлена, нужна срочная помощь.\n\nP.S. Это уже второй запрос по данной теме.\n\nКод ошибки: ERR_517",
+        "links": [],
+        "attachments": [],
+        "category": "incidents",
+        "scores": {
+            "incidents": 48,
+            "service_requests": 3,
+            "spam": 0,
+            "hardware_faults": 0
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "работа полностью остановлена",
+            "после утреннего обновления",
+            "ошибка появляется сразу",
+            "перестал открываться",
+            "active directory",
+            "запрос"
+        ],
+        "decision_reason": "Выбрана категория 'incidents', score=48, отрыв от второго места=45",
+        "expected_category": "incidents",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0006.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "Закрывающие документы за декабрь Уточните статус оплаты по акту от 10.7.2025. В нашей системе оплата ещё не отражена.\n\nСпасибо.\n\nID заявки: #12757",
+        "links": [],
+        "attachments": [],
+        "category": "service_requests",
+        "scores": {
+            "incidents": 0,
+            "service_requests": 22,
+            "spam": 0,
+            "hardware_faults": 0
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "закрывающие документы",
+            "оплата"
+        ],
+        "decision_reason": "Выбрана категория 'service_requests', score=22, отрыв от второго места=22",
+        "expected_category": "service_requests",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0095.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "Запрос доступа к 1C Коллеги, привет!\n\nПосле перевода в отдел Продажи у Мария Смирнова пропал доступ к 1C. Раньше всё работало. Прошу восстановить.\n\nOtpravleno s iPhone\n\nПрикрепил: contract_v2.docx\n\nКод ошибки: ERR_762",
+        "links": [],
+        "attachments": [],
+        "category": "incidents",
+        "scores": {
+            "incidents": 27,
+            "service_requests": 3,
+            "spam": 0,
+            "hardware_faults": 0
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "после перевода",
+            "пропал доступ",
+            "запрос",
+            "1c"
+        ],
+        "decision_reason": "Выбрана категория 'incidents', score=27, отрыв от второго места=24",
+        "expected_category": "incidents",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0035.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "Статус задач — нужен созвон Здравствуйте!\n\nНужно обсудить статус задач до конца недели. Предлагаю созвон на 30 минут.\n\nС уважением,\nKate Brown\n\nКод ошибки: ERR_561",
+        "links": [],
+        "attachments": [],
+        "category": "service_requests",
+        "scores": {
+            "incidents": 0,
+            "service_requests": 45,
+            "spam": 0,
+            "hardware_faults": 0
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "предлагаю созвон",
+            "нужно обсудить",
+            "статус задач",
+            "созвон"
+        ],
+        "decision_reason": "Выбрана категория 'service_requests', score=45, отрыв от второго места=45",
+        "expected_category": "service_requests",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0074.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "Добрый день.\n\nНе работает. Уже второй день.\n\nЕсли вопрос не к вам — перенаправьте, пожалуйста.\n\nФайл: error_log.txt",
+        "links": [],
+        "attachments": [],
+        "category": "incidents",
+        "scores": {
+            "incidents": 12,
+            "service_requests": 0,
+            "spam": 0,
+            "hardware_faults": 0
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "не работает. уже второй день"
+        ],
+        "decision_reason": "Выбрана категория 'incidents', score=12, отрыв от второго места=12",
+        "expected_category": "incidents",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0085.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "Запрос доступа к VPN Нужны права на VPN для временного сотрудника. Доступ требуется на 2 недели, только чтение.\n\nС уважением,\nВиктор Громов\n\nВложение: invoice.pdf",
+        "links": [],
+        "attachments": [],
+        "category": "service_requests",
+        "scores": {
+            "incidents": 0,
+            "service_requests": 36,
+            "spam": 0,
+            "hardware_faults": 0
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "доступ требуется",
+            "нужны права",
+            "вложение",
+            "invoice",
+            "запрос",
+            "vpn"
+        ],
+        "decision_reason": "Выбрана категория 'service_requests', score=36, отрыв от второго места=36",
+        "expected_category": "service_requests",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0014.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "Неисправность оборудования: гарнитура Hi,\n\nПрошу принять заявку на ремонт. Устройство: гарнитура. Симптомы: не определяется системой. Сотрудник: Михаил Сидоров.\n\nЕсли вопрос не к вам — перенаправьте, пожалуйста.",
+        "links": [],
+        "attachments": [],
+        "category": "hardware_faults",
+        "scores": {
+            "incidents": 0,
+            "service_requests": 0,
+            "spam": 0,
+            "hardware_faults": 22
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "не определяется системой",
+            "гарнитура"
+        ],
+        "decision_reason": "Выбрана категория 'hardware_faults', score=22, отрыв от второго места=22",
+        "expected_category": "hardware_faults",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0044.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "От кого: no-reply <no-reply@monitoring.internal>\nКому: it-support@company.ru\nДата: 31.05.2025 18:51\nТема: Нужны права в 1C для нового сотрудника\n\nНовый сотрудник Kate Brown приступает к работе с понедельника. Нужно подготовить доступ к 1C и корпоративной почте.",
+        "links": [],
+        "attachments": [],
+        "category": "service_requests",
+        "scores": {
+            "incidents": 5,
+            "service_requests": 30,
+            "spam": 0,
+            "hardware_faults": 0
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "новый сотрудник",
+            "нужны права",
+            "monitoring",
+            "доступ",
+            "1c"
+        ],
+        "decision_reason": "Выбрана категория 'service_requests', score=30, отрыв от второго места=25",
+        "expected_category": "service_requests",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0015.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "URGENT: Больничный лист Здравствуйте!\n\nПрошу согласовать ежегодный отпуск с 9.7.2025 на 14 дней.\n\nЕсли вопрос не к вам — перенаправьте, пожалуйста.\n\nВо вложении: screenshot.png",
+        "links": [],
+        "attachments": [],
+        "category": "service_requests",
+        "scores": {
+            "incidents": 0,
+            "service_requests": 24,
+            "spam": 0,
+            "hardware_faults": 0
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "ежегодный отпуск",
+            "больничный лист"
+        ],
+        "decision_reason": "Выбрана категория 'service_requests', score=24, отрыв от второго места=24",
+        "expected_category": "service_requests",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0059.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "От кого: Ольга Белова <o.belova@client.biz>\nКому: it-support@company.ru\nДата: 05.06.2025 13:14\nТема: [IT] Перенос созвона\n\nПредлагаю встретиться по квартальному отчёту в четверг в 14:00. Продолжительность — 1 час. Пожалуйста, подтвердите участие.\n\nС уважением,\nno-reply\n\nВо вложении: screenshot.png\n\nID заявки: #57823",
+        "links": [],
+        "attachments": [],
+        "category": "service_requests",
+        "scores": {
+            "incidents": 0,
+            "service_requests": 12,
+            "spam": 0,
+            "hardware_faults": 0
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "перенос созвона"
+        ],
+        "decision_reason": "Выбрана категория 'service_requests', score=12, отрыв от второго места=12",
+        "expected_category": "service_requests",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0002.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "От кого: John Smith <john.smith@globaltech.com>\nКому: it-support@company.ru\nДата: 03.04.2025 11:08\nТема: URGENT: Запрос от внешнего пользователя\n\nДобрый день.\n\nКлиент обращается повторно — заявка висит без ответа уже 3 дня. Прошу срочно разобраться.\n\nP.S. Это уже второй запрос по данной теме.",
+        "links": [],
+        "attachments": [],
+        "category": "incidents",
+        "scores": {
+            "incidents": 12,
+            "service_requests": 1,
+            "spam": 0,
+            "hardware_faults": 0
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "заявка висит без ответа",
+            "запрос"
+        ],
+        "decision_reason": "Выбрана категория 'incidents', score=12, отрыв от второго места=11",
+        "expected_category": "incidents",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0072.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "От кого: Светлана Попова <s.popova@company.ru>\nКому: it-support@company.ru\nДата: 26.03.2025 18:07\nТема: Запрос доступа к почта\n\nЗдравствуйте!\n\nПосле перевода в отдел Закупки у Тимур Андреев пропал доступ к почта. Раньше всё работало. Прошу восстановить.\n\nПрикрепил: contract_v2.docx",
+        "links": [],
+        "attachments": [],
+        "category": "incidents",
+        "scores": {
+            "incidents": 27,
+            "service_requests": 16,
+            "spam": 0,
+            "hardware_faults": 0
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "запрос доступа к почта",
+            "после перевода",
+            "пропал доступ",
+            "почта"
+        ],
+        "decision_reason": "Выбрана категория 'incidents', score=27, отрыв от второго места=11",
+        "expected_category": "incidents",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0101.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "Срочно: не работает Active Directory Hi,\n\nСервис Active Directory не отвечает с 9:15. Пробовали перезайти — не помогает. Несколько коллег из Логистика подтвердили ту же проблему.\n\nПрикрепил: contract_v2.docx",
+        "links": [],
+        "attachments": [],
+        "category": "incidents",
+        "scores": {
+            "incidents": 10,
+            "service_requests": 3,
+            "spam": 0,
+            "hardware_faults": 2
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "active directory",
+            "не отвечает"
+        ],
+        "decision_reason": "Выбрана категория 'incidents', score=10, отрыв от второго места=7",
+        "expected_category": "incidents",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0096.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "Выдать права: облачное хранилище Добрый день.\n\nНужны права на облачное хранилище для временного сотрудника. Доступ требуется на 2 недели, только чтение.\n\nBest regards,\nНаталья Лебедева\n\nФайл: error_log.txt",
+        "links": [],
+        "attachments": [],
+        "category": "service_requests",
+        "scores": {
+            "incidents": 8,
+            "service_requests": 26,
+            "spam": 0,
+            "hardware_faults": 0
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "облачное хранилище",
+            "доступ требуется",
+            "нужны права"
+        ],
+        "decision_reason": "Выбрана категория 'service_requests', score=26, отрыв от второго места=18",
+        "expected_category": "service_requests",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0081.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "Уточнение по оплате договора Здравствуйте!\n\nПрошу выдать доступ сотруднику Михаил Сидоров (Маркетинг) к системе корпоративный портал. Уровень доступа — чтение и редактирование. Руководитель согласовал.\n\nТакже хотел уточнить ещё один момент:\n\nУточните статус оплаты по акту от 3.5.2025. В нашей системе оплата ещё не отражена.\n\nOtpravleno s iPhone\n\nВложение: invoice.pdf\n\nID заявки: #21835",
+        "links": [],
+        "attachments": [],
+        "category": "service_requests",
+        "scores": {
+            "incidents": 0,
+            "service_requests": 58,
+            "spam": 0,
+            "hardware_faults": 0
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "руководитель согласовал",
+            "корпоративный портал",
+            "прошу выдать доступ",
+            "уровень доступа",
+            "вложение",
+            "invoice",
+            "оплата"
+        ],
+        "decision_reason": "Выбрана категория 'service_requests', score=58, отрыв от второго места=58",
+        "expected_category": "service_requests",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0058.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "От кого: Тимур Андреев <t.andreev@company.ru>\nКому: it-support@company.ru\nДата: 28.05.2025 12:44\nТема: Не запускается антивирус\n\nПосле обновления системы антивирус не открывает файлы нужного формата. Раньше всё работало.\n\nЕсли вопрос не к вам — перенаправьте, пожалуйста.\n\nФайл: error_log.txt",
+        "links": [],
+        "attachments": [],
+        "category": "incidents",
+        "scores": {
+            "incidents": 24,
+            "service_requests": 2,
+            "spam": 0,
+            "hardware_faults": 0
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "не открывает файлы нужного формата",
+            "после обновления системы",
+            "антивирус"
+        ],
+        "decision_reason": "Выбрана категория 'incidents', score=24, отрыв от второго места=22",
+        "expected_category": "incidents",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0086.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "От кого: Дмитрий Орлов <d.orlov@corp.local>\nКому: it-support@company.ru\nДата: 09.02.2025 09:18\nТема: Финальная версия: договор\n\nДобрый день.\n\nНе могу войти в облачное хранилище. Логин и пароль правильные, но система выдаёт: 'Доступ запрещён'. Коллеги из моего отдела сталкиваются с тем же.\n\nТакже хотел уточнить ещё один момент:\n\nВо вложении новая версия договора с учётом ваших комментариев.\n\nСпасибо.",
+        "links": [],
+        "attachments": [],
+        "category": "incidents",
+        "scores": {
+            "incidents": 34,
+            "service_requests": 27,
+            "spam": 12,
+            "hardware_faults": 0
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "облачное хранилище",
+            "финальная версия",
+            "не могу войти в",
+            "доступ запрещен",
+            "логин и пароль",
+            "новая версия",
+            "договор"
+        ],
+        "decision_reason": "Выбрана категория 'incidents', score=34, отрыв от второго места=7",
+        "expected_category": "incidents",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0097.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "Проблема с мышь Здравствуйте!\n\nУ сотрудника Наталья Лебедева мышь издаёт посторонние звуки. Просим организовать диагностику или замену.\n\nС уважением,\nНаталья Лебедева\n\nВо вложении: screenshot.png",
+        "links": [],
+        "attachments": [],
+        "category": "hardware_faults",
+        "scores": {
+            "incidents": 0,
+            "service_requests": 0,
+            "spam": 0,
+            "hardware_faults": 34
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "издает посторонние звуки",
+            "диагностику или замену",
+            "мышь"
+        ],
+        "decision_reason": "Выбрана категория 'hardware_faults', score=34, отрыв от второго места=34",
+        "expected_category": "hardware_faults",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0070.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "От кого: Елена Новикова <e.novikova@corp.local>\nКому: it-support@company.ru\nДата: 29.06.2025 09:54\nТема: Ошибка в Adobe Reader после обновления\n\nКоллеги, привет!\n\nНе могу установить Adobe Reader — установщик зависает на 80% и выдаёт ошибку. Права администратора есть. Что делать?\n\nС уважением,\nМихаил Сидоров\n\nВо вложении: screenshot.png",
+        "links": [],
+        "attachments": [],
+        "category": "incidents",
+        "scores": {
+            "incidents": 17,
+            "service_requests": 1,
+            "spam": 0,
+            "hardware_faults": 1
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "не могу установить",
+            "ошибка"
+        ],
+        "decision_reason": "Выбрана категория 'incidents', score=17, отрыв от второго места=16",
+        "expected_category": "incidents",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0040.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "От кого: Светлана Попова <s.popova@company.ru>\nКому: it-support@company.ru\nДата: 16.03.2025 10:40\nТема: \n\nЗдравствуйте!\n\nНужно обсудить статус задач до конца недели. Предлагаю созвон на 30 минут.\n\nСпасибо.",
+        "links": [],
+        "attachments": [],
+        "category": "service_requests",
+        "scores": {
+            "incidents": 0,
+            "service_requests": 35,
+            "spam": 0,
+            "hardware_faults": 0
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "предлагаю созвон",
+            "нужно обсудить",
+            "статус задач"
+        ],
+        "decision_reason": "Выбрана категория 'service_requests', score=35, отрыв от второго места=35",
+        "expected_category": "service_requests",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0020.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "Проблема с установкой Zoom Zoom перестал запускаться после вчерашнего обновления. Появляется ошибка при старте. Переустановка не помогла.\n\nПрикрепил: contract_v2.docx",
+        "links": [],
+        "attachments": [],
+        "category": "incidents",
+        "scores": {
+            "incidents": 29,
+            "service_requests": 3,
+            "spam": 0,
+            "hardware_faults": 1
+        },
+        "matched_subject_markers": [],
         "matched_text_markers": [
             "переустановка не помогла",
             "перестал запускаться",
             "ошибка",
             "zoom"
         ],
-        "decision_reason": "Выбрана категория 'incidents', score=37.0, отрыв от второго места=29.0",
-        "move_status": "пропущено: нет имени файла"
+        "decision_reason": "Выбрана категория 'incidents', score=29, отрыв от второго места=26",
+        "expected_category": "incidents",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0036.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "[INFO] Плановый отчёт мониторинга Hi,\n\nALERT: Database cluster не прошёл healthcheck 3 раза подряд.\nТребуется проверка.\n\nС уважением,\nПавел Соколов\n\nПрикрепил: contract_v2.docx\n\nID заявки: #35042\n\nКод ошибки: ERR_837",
+        "links": [],
+        "attachments": [],
+        "category": "incidents",
+        "scores": {
+            "incidents": 25,
+            "service_requests": 0,
+            "spam": 0,
+            "hardware_faults": 0
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "плановый отчет мониторинга",
+            "healthcheck",
+            "alert"
+        ],
+        "decision_reason": "Выбрана категория 'incidents', score=25, отрыв от второго места=25",
+        "expected_category": "incidents",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0093.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "Re: Exclusive offer — limited time Поздравляем! Вы стали победителем розыгрыша. Для получения приза перейдите по ссылке: http://totally-not-spam.ru/prize и введите данные банковской карты.\n\nP.S. Это уже второй запрос по данной теме.\n\nВо вложении: screenshot.png",
+        "links": [],
+        "attachments": [],
+        "category": "spam",
+        "scores": {
+            "incidents": 0,
+            "service_requests": 1,
+            "spam": 89,
+            "hardware_faults": 0
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "данные банковской карты",
+            "победителем розыгрыша",
+            "перейдите по ссылке",
+            "totally-not-spam",
+            "exclusive offer",
+            "получения приза",
+            "limited time",
+            "поздравляем",
+            "запрос"
+        ],
+        "decision_reason": "Выбрана категория 'spam', score=89, отрыв от второго места=88",
+        "expected_category": "spam",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0071.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "Поздравляем! Вы стали победителем розыгрыша. Для получения приза перейдите по ссылке: http://totally-not-spam.ru/prize и введите данные банковской карты.\n\nBest regards,\nАлексей Козлов",
+        "links": [],
+        "attachments": [],
+        "category": "spam",
+        "scores": {
+            "incidents": 0,
+            "service_requests": 0,
+            "spam": 70,
+            "hardware_faults": 0
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "данные банковской карты",
+            "победителем розыгрыша",
+            "перейдите по ссылке",
+            "totally-not-spam",
+            "получения приза",
+            "поздравляем"
+        ],
+        "decision_reason": "Выбрана категория 'spam', score=70, отрыв от второго места=70",
+        "expected_category": "spam",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0052.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "Проблема с принтер Коллеги, привет!\n\nПрошу принять заявку на ремонт. Устройство: принтер. Симптомы: зависает при работе. Сотрудник: noreply.\n\nВложение: invoice.pdf",
+        "links": [],
+        "attachments": [],
+        "category": "hardware_faults",
+        "scores": {
+            "incidents": 0,
+            "service_requests": 7,
+            "spam": 0,
+            "hardware_faults": 23
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "устройство: принтер",
+            "вложение",
+            "invoice",
+            "принтер"
+        ],
+        "decision_reason": "Выбрана категория 'hardware_faults', score=23, отрыв от второго места=16",
+        "expected_category": "hardware_faults",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0054.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "Уточнение по оплате договора Коллеги, привет!\n\nПросим подтвердить получение счёта №6612. Оплата по договору должна пройти до 3.6.2025.\n\nOtpravleno s iPhone\n\nПрикрепил: contract_v2.docx\n\nID заявки: #18968",
+        "links": [],
+        "attachments": [],
+        "category": "service_requests",
+        "scores": {
+            "incidents": 0,
+            "service_requests": 26,
+            "spam": 0,
+            "hardware_faults": 0
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "оплата по договору",
+            "получение счета"
+        ],
+        "decision_reason": "Выбрана категория 'service_requests', score=26, отрыв от второго места=26",
+        "expected_category": "service_requests",
+        "is_correct": true
+    },
+    {
+        "file_name": "mail_0055.txt",
+        "subject": "",
+        "sender": "",
+        "recipient": "",
+        "date": "",
+        "text": "Массовый сбой авторизации У нас критичный инцидент: Slack возвращает ошибку 500 уже 40 минут. Затронуты примерно 15 сотрудников. Просим срочно проверить.\n\nВложение: invoice.pdf",
+        "links": [],
+        "attachments": [],
+        "category": "incidents",
+        "scores": {
+            "incidents": 35,
+            "service_requests": 21,
+            "spam": 0,
+            "hardware_faults": 0
+        },
+        "matched_subject_markers": [],
+        "matched_text_markers": [
+            "возвращает ошибку 500",
+            "затронуты примерно",
+            "сбой авторизации",
+            "инцидент",
+            "вложение",
+            "invoice"
+        ],
+        "decision_reason": "Выбрана категория 'incidents', score=35, отрыв от второго места=14",
+        "expected_category": "incidents",
+        "is_correct": true
     }
 ]
